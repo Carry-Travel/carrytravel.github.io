@@ -150,7 +150,7 @@ p.lead {
 }
 
 .light-bg {
-    background-color: #faf6fb;
+    background-color: #f6fbff;
 }
 
 .section {
@@ -244,6 +244,13 @@ header {
     background-image: -webkit-linear-gradient( rgba(27,168,241, 0.8) 25%, rgba(239,218,178, 0.8) 100%);
     background-image: -ms-linear-gradient( rgba(27,168,241, 0.8) 25%, rgba(239,218,178, 0.8) 100%);
     background-image: linear-gradient( rgba(27,168,241, 0.8) 25%, rgba(239,218,178, 0.8) 100%);
+}
+
+.bg-gradient-2 {
+    background-image: -moz-linear-gradient( rgba(239,218,178, 0.8) 0%, rgba(187,156,112, 0.8) 100%);
+    background-image: -webkit-linear-gradient( rgba(239,218,178, 0.8) 0%, rgba(187,156,112, 0.8) 100%);
+    background-image: -ms-linear-gradient( rgba(239,218,178, 0.8) 0%, rgba(187,156,112, 0.8) 100%);
+    background-image: linear-gradient( rgba(239,218,178, 0.8) 0%, rgba(187,156,112, 0.8) 100%);
 }
 
 .tagline {
