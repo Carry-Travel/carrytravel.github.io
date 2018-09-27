@@ -229,6 +229,12 @@ p.lead {
     }
 }
 
+.divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
+}
+
 
 /* HERO
 ----------------------*/
@@ -604,7 +610,7 @@ header {
 .call-to-action .tagline {
     font-size: 16px;
     font-weight: 300;
-    color: #ffb8f6;
+    color: #ffffff;
     max-width: 650px;
     margin: 0 auto;
 }
