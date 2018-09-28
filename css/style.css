@@ -286,6 +286,9 @@ header {
     .img-holder {
         padding-bottom: 100%;
     }
+    .mobile-hide {
+        display: none !important;
+    }
 }
 
 
