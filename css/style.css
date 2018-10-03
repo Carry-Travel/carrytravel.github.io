@@ -289,6 +289,24 @@ header {
     .mobile-hide {
         display: none !important;
     }
+    #btn-divider
+    {
+        display: none !important;
+    }
+    .entry{
+        width: 60%;
+        font-size:0.9em`;
+    }
+    .exit{
+        width: 66%;
+        font-size:0.9em`;
+        margin-left:17%;
+        margin-right:17%;
+    }
+    #top-btn{
+        margin-bottom:1em;
+    }
+
 }
 
 
