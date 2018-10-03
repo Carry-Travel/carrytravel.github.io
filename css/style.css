@@ -294,12 +294,12 @@ header {
         display: none !important;
     }
     .entry{
-        width: 60%;
-        font-size:0.9em`;
+        width: 65%;
+        font-size:70%;
     }
     .exit{
-        width: 66%;
-        font-size:0.9em`;
+        width: 70%;
+        font-size:62%;
         margin-left:17%;
         margin-right:17%;
     }
