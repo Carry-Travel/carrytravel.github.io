@@ -276,6 +276,7 @@ header {
 @media (max-width:1200px) {
     .img-holder {
         padding-bottom: 50%;
+        height:10;
     }
 }
 
