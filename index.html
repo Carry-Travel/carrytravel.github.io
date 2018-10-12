@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.serialize-object.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -59,12 +62,63 @@
             </p>
         </div>
         <br>
-        <a href="#" class="entry btn btn-primary btn-lg" id="top-btn">Get Carry for your company</a>
+        <a onclick="showForm()" class="entry btn btn-primary btn-lg" id="top-btn">Get Carry for your company</a>
         <div class="divider" id="btn-divider"></div> 
-        <a href="#" class="entry btn btn-primary btn-lg">Join our waitlist for individuals</a>
+        <a onclick="showForm()" class="entry btn btn-primary btn-lg">Join our waitlist for individuals</a>
+        <form id="business-form" style="display: none">
+            <br>
+            <div>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Full Name"/>
+            </div>
+
+            <div>
+            <label>Phone Number</label>
+            <input type="text" name="phone_number" placeholder="Phone Number"/>
+            </div>
+
+            <div>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email Address"/>
+            </div>
+
+            <div>
+            <button type="submit"id="submit-form">Submit</button>
+            </div>
+
+        </form>
 
         <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div> 
     </header>
+
+    <script>
+    function showForm() {
+        var form1 = document.getElementById("business-form");
+        if (form1.style.display === "none") {
+            form1.style.display = "block";
+        } else {
+            form1.style.display = "none";
+        }
+    }
+
+    var $form = $('form#business-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
+
+    $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject(),
+            success: function() {
+                alert("Thanks for signing up!");
+                var form1 = document.getElementById("business-form");
+                form1.style.display = "none";
+            }
+            });
+    })
+    </script>
 
     <!--
     <div class="client-logos my-5">
