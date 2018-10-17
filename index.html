@@ -73,28 +73,34 @@
         <form id="business-form" style="display: none">
             <br>
             <div class='row'>
+                <div class='col-sm-1'>
+                </div>
                 <div class='col-sm-3'>    
                     <div class='form-group'>
                         <label for="name">Name</label>
-                        <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                        <input class="form-control half-form" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
                     </div>
                 </div>
                 <div class='col-sm-3'>
                     <div class='form-group'>
                         <label for="phone_number">Phone Number</label>
-                        <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                        <input class="form-control half-form" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
                     </div>
                 </div>
                 <div class='col-sm-3'>
                     <div class='form-group'>
                         <label for="email">Email</label>
-                        <input class="form-control" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
+                        <input class="form-control half-form" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
                     </div>
                 </div>
-                <div class='col-sm-3'>
-                    <div class='form-group'>
-                        <button class="btn btn-primary" type="submit" id="submit-form">Submit</button>
+                <div class='col-sm-1'>
+                    <div class='button-container'>
+                        <div class='button-wrapper'>
+                            <button class="btn btn-primary" type="submit" id="submit-form">Submit</button>
+                        </div>
                     </div>
+                </div>
+                <div class='col-sm-1'>
                 </div>
             </div>
         </form>
