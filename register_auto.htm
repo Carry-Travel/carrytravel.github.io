@@ -112,7 +112,7 @@
             <label class="label-customizable">Phone number</label>
             <div>
                 
-                <input id="username-input-desktop" onkeyup="checkPasswordMatch(&#39;desktop&#39;);" type="tel" autocapitalize="none" class="form-control inputField-customizable" placeholder="Phone number" required="" name="username" value="">
+                <input id="username-input-desktop" onkeyup="checkPasswordMatch(&#39;desktop&#39;);" type="tel" autocapitalize="none" class="form-control inputField-customizable" placeholder="Phone number without dashes" required="" name="username" value="+01">
                 
             </div>
             <div>
@@ -333,6 +333,18 @@
 
     <script src="./register_auto_files/jquery-3.2.1.min.js"></script>
     <script>
+
+    $(document).ready(function(){
+        $("#username-input-desktop").keydown(function(e) {
+            var oldvalue=$(this).val();
+            var field=this;
+            setTimeout(function () {
+                if(field.value.indexOf('+01') !== 0) {
+                    $(field).val(oldvalue);
+                } 
+            }, 1);
+        });
+    });
 
 	function checkPasswordMatch(screenSize) {
 		var passwordPolicy = [];
