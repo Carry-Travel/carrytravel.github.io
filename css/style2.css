@@ -61,11 +61,12 @@ p {
         font-size: 28px;
     }
 }
+
 /* Hero */
 .hero {
     background-color: rgb(13,28,84);
     width: 100vw;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .balloons {
@@ -80,6 +81,12 @@ p {
 .banner {
     color: white;
     margin-top: 10vh;
+}
+
+@media (max-height:575px) {
+    .balloon-align {
+        display: none;
+    }
 }
 
 /* Content */
