@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://auth.carry.travel/confirm?response_type=code&client_id=44325nl0g06meq3a21g9c9ci58&redirect_uri=https://carry.travel/ -->
+<html class=" a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition" data-aui-build-date="3.17.16.3-2017-10-11"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./verify_auto_files/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./verify_auto_files/cognito-login.css" rel="stylesheet" media="screen">
+    
+    <title>Signin</title>
+
+    <script src="./verify_auto_files/amazon-cognito-advanced-security-data.min.js"></script>
+    <script>
+    function getAdvancedSecurityData(formReference) {
+        if (typeof AmazonCognitoAdvancedSecurityData === "undefined") {
+            return true;
+        }
+
+        // UserpoolId is not available on frontend for springboard. We do not use userPoolId
+        // anyway other than put in context data. 
+        var userPoolId = "";
+        var clientId = getUrlParameter("client_id");
+
+        var username = "";
+        var usernameInput = document.getElementById("username");
+        if (usernameInput && usernameInput.value) {
+            username = usernameInput.value;
+        }
+
+        var asfData = AmazonCognitoAdvancedSecurityData.getData(username, userPoolId, clientId);
+        if (typeof asfData === "undefined") {
+            return true;
+        }
+
+        if (formReference && formReference.cognitoAsfData) {
+            formReference.cognitoAsfData.value = asfData
+        }
+
+        return true;
+    }
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div class="modal-dialog">
+            <div class="modal-content background-customizable modal-content-mobile visible-xs visible-sm">
+                <div>
+                    <div class="banner-customizable">
+                        <center>
+                            
+                        </center>
+                    </div>
+                </div>
+                <div id="div-forms" class="modal-body">
+                    <div><div>
+    
+        <form name="confirmform" id="confirm" action="https://auth.carry.travel/confirm?response_type=code&amp;client_id=44325nl0g06meq3a21g9c9ci58&amp;redirect_uri=https://carry.travel/" method="post" class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="bda58393-9ac7-41ab-9bf2-e10a2c09826e">
+
+            <input type="hidden" class="form-control inputField-customizable" id="username" name="username" value="+016788962554">
+            <input type="hidden" class="form-control inputField-customizable" id="destination" name="destination" value="+********2554">
+            <input type="hidden" class="form-control inputField-customizable" id="deliveryMedium" name="deliveryMedium" value="SMS">
+            <input type="hidden" class="form-control inputField-customizable" id="sub" name="sub" value="85d88404-b15a-4450-bb2f-9f44d240ce14">
+            <input type="hidden" class="form-control inputField-customizable" id="cognito-asf-data" name="cognitoAsfData">
+
+            
+            
+            <br>
+            <div id="div-confirm-msg">
+                <span id="text-code">We have sent a code by sms to +********2554. Enter it below to confirm your account.</span>
+            </div>
+
+            <label>Verification Code</label>
+            <input id="verification_code" type="password" name="code" required="">
+
+            <div>
+                <button name="confirm" type="submit" class="btn btn-primary submitButton-customizable">Confirm Account</button>
+            </div>
+        </form>
+
+        <form name="resendcodeform" id="resend" action="https://auth.carry.travel/resendcode?response_type=code&amp;client_id=44325nl0g06meq3a21g9c9ci58&amp;redirect_uri=https://carry.travel/" method="post" class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="bda58393-9ac7-41ab-9bf2-e10a2c09826e">
+
+            <input type="hidden" class="form-control inputField-customizable" name="username" value="+016788962554">
+            <input type="hidden" class="form-control inputField-customizable" name="destination" value="+********2554">
+            <input type="hidden" class="form-control inputField-customizable" name="deliveryMedium" value="SMS">
+            <input type="hidden" class="form-control inputField-customizable" id="sub" name="sub" value="85d88404-b15a-4450-bb2f-9f44d240ce14">
+            <input type="hidden" class="form-control inputField-customizable" id="cognito-asf-data" name="cognitoAsfData">
+
+            <p class="redirect-customizable"><span>Didn't receive a code?</span>
+                <button name="resend" type="submit" class="btn btn-link">Resend it</button>
+            </p>
+        </form>
+        
+</div></div>
+                    
+                </div>
+            </div>
+            <div class="modal-content background-customizable modal-content-desktop visible-md visible-lg">
+                <div>
+                    <div class="banner-customizable">
+                        <center>
+                            
+                        </center>
+                    </div>
+                </div>
+                <div id="div-forms" class="modal-body">
+                    <div><div>
+    
+        <form name="confirmform" id="confirm" action="https://auth.carry.travel/confirm?response_type=code&amp;client_id=44325nl0g06meq3a21g9c9ci58&amp;redirect_uri=https://carry.travel/" method="post" class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="bda58393-9ac7-41ab-9bf2-e10a2c09826e">
+
+            <input type="hidden" class="form-control inputField-customizable" id="username" name="username" value="+016788962554">
+            <input type="hidden" class="form-control inputField-customizable" id="destination" name="destination" value="+********2554">
+            <input type="hidden" class="form-control inputField-customizable" id="deliveryMedium" name="deliveryMedium" value="SMS">
+            <input type="hidden" class="form-control inputField-customizable" id="sub" name="sub" value="85d88404-b15a-4450-bb2f-9f44d240ce14">
+            <input type="hidden" class="form-control inputField-customizable" id="cognito-asf-data" name="cognitoAsfData">
+
+            
+            
+            <br>
+            <div id="div-confirm-msg">
+                <span id="text-code">We have sent a code by sms to +********2554. Enter it below to confirm your account.</span>
+            </div>
+
+            <label>Verification Code</label>
+            <input id="verification_code" type="password" name="code" required="">
+
+            <div>
+                <button name="confirm" type="submit" class="btn btn-primary submitButton-customizable">Confirm Account</button>
+            </div>
+        </form>
+
+        <form name="resendcodeform" id="resend" action="https://auth.carry.travel/resendcode?response_type=code&amp;client_id=44325nl0g06meq3a21g9c9ci58&amp;redirect_uri=https://carry.travel/" method="post" class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="bda58393-9ac7-41ab-9bf2-e10a2c09826e">
+
+            <input type="hidden" class="form-control inputField-customizable" name="username" value="+016788962554">
+            <input type="hidden" class="form-control inputField-customizable" name="destination" value="+********2554">
+            <input type="hidden" class="form-control inputField-customizable" name="deliveryMedium" value="SMS">
+            <input type="hidden" class="form-control inputField-customizable" id="sub" name="sub" value="85d88404-b15a-4450-bb2f-9f44d240ce14">
+            <input type="hidden" class="form-control inputField-customizable" id="cognito-asf-data" name="cognitoAsfData">
+
+            <p class="redirect-customizable"><span>Didn't receive a code?</span>
+                <button name="resend" type="submit" class="btn btn-link">Resend it</button>
+            </p>
+        </form>
+        
+</div></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+<div class="fwcim-container"></div></body></html>
