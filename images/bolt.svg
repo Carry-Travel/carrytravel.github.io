@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="119px" viewBox="0 0 119 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="55.5" cy="55.5" r="55.5"></circle>
+        <filter x="-6.3%" y="-4.5%" width="112.6%" height="112.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M45.6064192,20 C45.1901279,19.1666667 44.565691,18.75 43.7331084,18.75 L27.2896021,18.75 L29.162913,4.375 C29.3710586,3.54166667 28.7466217,2.5 27.9140391,2.29166667 C27.0814565,1.875 26.0407282,2.08333333 25.4162913,2.91666667 L4.60172645,27.9166667 C4.18543515,28.5416667 3.9772895,29.375 4.3935808,30.2083333 C4.80987209,30.8333333 5.43430904,31.25 6.26689163,31.25 L22.7103979,31.25 L20.837087,45.625 C20.6289414,46.4583333 21.2533783,47.5 22.0859609,47.7083333 C22.2941066,47.9166667 22.7103979,47.9166667 22.9185435,47.9166667 C23.5429805,47.9166667 24.1674174,47.7083333 24.5837087,47.0833333 L45.3982736,22.0833333 C45.8145649,21.4583333 46.0227105,20.625 45.6064192,20 Z M25.8325826,38.9583333 L27.0814565,29.375 C27.0814565,28.75 26.8733108,28.125 26.6651652,27.7083333 C26.2488739,27.2916667 25.6244369,27.0833333 25,27.0833333 L10.6379503,27.0833333 L23.9592718,11.0416667 L22.9185435,20.625 C22.9185435,21.25 23.1266892,21.875 23.3348348,22.2916667 C23.7511261,22.7083333 24.3755631,22.9166667 24.7918544,22.9166667 L39.1539041,22.9166667 L25.8325826,38.9583333 Z" id="path-3"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-716.000000, -1130.000000)">
+            <g id="Group-6" transform="translate(720.000000, 1132.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#0D1C54" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="icon-/-zap" transform="translate(31.000000, 31.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                    <g id="color-/-white" mask="url(#mask-4)" fill="#FFFFFF" fill-rule="evenodd">
+                        <rect id="Shape" x="0" y="0" width="50" height="50"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

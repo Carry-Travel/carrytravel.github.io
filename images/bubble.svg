@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="477px" height="201px" viewBox="0 0 477 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Bubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="53.0547746%" x2="0%" y2="51.2878798%" id="linearGradient-1">
+            <stop stop-color="#0099FF" offset="0%"></stop>
+            <stop stop-color="#4574DD" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 468.351552 0 469 193 441.143205 163.398639 0 163.398639"></polygon>
+        <filter x="-1.5%" y="-2.6%" width="103.0%" height="107.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-832.000000, -578.000000)">
+            <g id="Bubble" transform="translate(836.000000, 580.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <text id="Hi-Carry,-book-me-a" font-family="AvenirNextLTPro-Light, Avenir Next LT Pro" font-size="28" font-weight="300" fill="#FFFFFF">
+                    <tspan x="22" y="48">Hi Carry, book me a flight from </tspan>
+                    <tspan x="22" y="86">SF to London leaving Sunday </tspan>
+                    <tspan x="22" y="124">and returning next Friday.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
