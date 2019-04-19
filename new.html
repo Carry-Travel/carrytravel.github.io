@@ -110,7 +110,7 @@
                         <div class="circle-icon mr-4"><span class="ti-check-box"></span></div>
                         <div class="media-body">
                             <h3>Effortless booking</h3>
-                            <p>Book your itinerary by messaging us on any platform, we'll handle all the trip research.</p>
+                            <p>We handle all the trip research, so that you can focus on what matters.</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <div class="circle-icon mr-4"><span class="ti-money"></span></div>
                         <div class="media-body">
                             <h3>Exclusive rates</h3>
-                            <p>Get access to industry rates that can’t be found on any online travel booking platform.</p>
+                            <p>Get access to private rates that can’t be found on any online travel booking platform.</p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <div class="circle-icon mr-4"><span class="ti-bolt"></span></div>
                         <div class="media-body">
                             <h3>24/7 support</h3>
-                            <p>Handle flight changes, hotel transfers, early-checkin, and any travel issues through our team.</p>
+                            <p>We handle flight changes, hotel transfers, early check-in, and preemptively solve any issues that arise.</p>
                         </div>
                     </div>
                 </div>
@@ -149,61 +149,89 @@
                     <div class="container mt-5 card py-3 py-4">
                         <h3 class="card-title py-3 text-center">For companies</h3>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Automatic travel billing to corporate account</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Top flight and hotel options curated for business travelers</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Seamless integration into business tools such as Slack</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>20-40% savings from exclusive rates and smart planning</p></li>
+                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Automatic travel billing to corporate account</p></li>
+                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Top flight and hotel options curated for business travelers</p></li>
+                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Seamless integration into business tools such as Slack</p></li>
+                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>20-40% savings on yearly travel spend through exclusive rates</p></li>
                         </ul>
                         <div class="container mt-4 ">
                             <button class="btn btn-primary btn-lg" id="left-btn">Get Carry for your company</button>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 order-md-last">
+                    <form id="business-form" style="display: none">
+                        <br>
+                        <div class='row'>
+                            <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>    
+                                <div class='form-group'>
+                                    <label for="name">Name</label>
+                                    <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                                </div>
+                            </div>
+                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                <div class='form-group'>
+                                    <label for="phone_number">Phone Number</label>
+                                    <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                                </div>
+                            </div>
+                            <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-0'>
+                                <div class='form-group'>
+                                    <label for="email">Email</label>
+                                    <input class="form-control" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
+                                </div>
+                            </div>
+                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                <div class='button-container pt-4'>
+                                    <div class='button-wrapper'>
+                                        <button class="btn btn-primary" type="submit" id="submit-business-form">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <div class="col-md-5">
                         <div class="container mt-5 card py-3 py-4">
-                            <h3 class="card-title py-3 text-center">For companies</h3>
+                            <h3 class="card-title py-3 text-center">For individuals</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Expert itinerary planning from world-class travel team</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Contact us from Messenger, SMS, or email</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Make travel stress-free with 24/7 support</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2"></span>Access exclusive rates on international travel</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Expert itinerary planning from world-class travel team</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Contact us from Messenger, SMS, or email</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Make travel stress-free with 24/7 support</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Access exclusive rates on international travel</p></li>
                             </ul>
                             <div class="container mt-4 ">
                                 <button class="btn btn-primary btn-lg" id="right-btn">Request access to our beta</button>
                             </div>
                         </div>
                 </div>
-            </div>
-            <form id="business-form" style="display: none">
-                <br>
-                <div class='row'>
-                    <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>    
-                        <div class='form-group'>
-                            <label for="name">Name</label>
-                            <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
-                        </div>
-                    </div>
-                    <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
-                        <div class='form-group'>
-                            <label for="phone_number">Phone Number</label>
-                            <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
-                        </div>
-                    </div>
-                    <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-0'>
-                        <div class='form-group'>
-                            <label for="email">Email</label>
-                            <input class="form-control" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
-                        </div>
-                    </div>
-                    <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
-                        <div class='button-container pt-4'>
-                            <div class='button-wrapper'>
-                                <button class="btn btn-primary" type="submit" id="submit-form">Submit</button>
+                <div class="col-12">
+                    <form id="individual-form" style="display: none">
+                        <br>
+                        <div class='row'>
+                            <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-1'>    
+                                <div class='form-group'>
+                                    <label for="name">Name</label>
+                                    <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                                </div>
+                            </div>
+                            <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-0'>
+                                <div class='form-group'>
+                                    <label for="phone_number">Phone Number</label>
+                                    <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                                </div>
+                            </div>
+                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                <div class='button-container pt-4'>
+                                    <div class='button-wrapper'>
+                                        <button class="btn btn-primary" type="submit" id="submit-individual-form">Submit</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
     <section class="footer">
@@ -233,16 +261,24 @@
     <script>
         $('#left-btn').click(function() {
             $("#business-form").toggle();
+            var form1 = document.getElementById("individual-form");
+            if (form1.style.display != "none") {
+                form1.style.display = "none";
+            }
         });
 
         $('#right-btn').click(function() {
-            $("#business-form").toggle();
+            $("#individual-form").toggle();
+            var form1 = document.getElementById("business-form");
+            if (form1.style.display != "none") {
+                form1.style.display = "none";
+            }
         });
     
         var $form = $('form#business-form'),
         url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
     
-        $('#submit-form').on('click', function(e) {
+        $('#submit-business-form').on('click', function(e) {
             e.preventDefault();
             var jqxhr = $.ajax({
                 url: url,
@@ -252,6 +288,22 @@
                 success: function() {
                     alert("Thanks for signing up!");
                     var form1 = document.getElementById("business-form");
+                    form1.style.display = "none";
+                }
+                });
+        })
+
+        var $form = $('form#individual-form')
+        $('#submit-individual-form').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject(),
+                success: function() {
+                    alert("Thanks for signing up!");
+                    var form1 = document.getElementById("individual-form");
                     form1.style.display = "none";
                 }
                 });
