@@ -269,13 +269,13 @@
 
         $('#right-btn').click(function() {
             $("#individual-form").toggle();
-            var form1 = document.getElementById("business-form");
-            if (form1.style.display != "none") {
-                form1.style.display = "none";
+            var form2 = document.getElementById("business-form");
+            if (form2.style.display != "none") {
+                form2.style.display = "none";
             }
         });
     
-        var $form = $('form#business-form'),
+        var $busform = $('form#business-form'),
         url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
     
         $('#submit-business-form').on('click', function(e) {
@@ -284,7 +284,7 @@
                 url: url,
                 method: "GET",
                 dataType: "json",
-                data: $form.serializeObject(),
+                data: $busform.serializeObject(),
                 success: function() {
                     alert("Thanks for signing up!");
                     var form1 = document.getElementById("business-form");
@@ -293,14 +293,14 @@
                 });
         })
 
-        var $form = $('form#individual-form')
+        var $indform = $('form#individual-form')
         $('#submit-individual-form').on('click', function(e) {
             e.preventDefault();
             var jqxhr = $.ajax({
                 url: url,
                 method: "GET",
                 dataType: "json",
-                data: $form.serializeObject(),
+                data: $indform.serializeObject(),
                 success: function() {
                     alert("Thanks for signing up!");
                     var form1 = document.getElementById("individual-form");
