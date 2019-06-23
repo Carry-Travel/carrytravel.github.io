@@ -80,6 +80,7 @@ p {
 
 /* Hero */
 .hero {
+    min-height: 800px;
 }
 
 .hero-bg {
@@ -100,6 +101,26 @@ p {
     display: block;
     margin: 0 auto;
     opacity: 0.04;
+    -webkit-animation: fade-in .8s;
+    animation: fade-in .8s;
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 0.04
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 0.04
+    }
 }
 
 .banner {
@@ -115,6 +136,37 @@ video {
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.animate-slide-right {
+    -webkit-animation: slide-right .8s;
+    animation: slide-right .8s
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-70px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
 }
 
 @media (max-height:575px) {
