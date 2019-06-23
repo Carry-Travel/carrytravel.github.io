@@ -146,7 +146,7 @@ video {
 @-webkit-keyframes slide-right {
     0% {
         -webkit-transform: translateX(-50px);
-        transform: translateX(-70px);
+        transform: translateX(-50px);
         opacity: 0
     }
     to {
@@ -165,6 +165,68 @@ video {
     to {
         -webkit-transform: translateX(0);
         transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.animate-slide-down {
+    -webkit-animation: slide-down .8s;
+    animation: slide-down .8s
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.animate-slide-left {
+    -webkit-animation: slide-left .8s;
+    animation: slide-left .8s
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1
     }
 }
@@ -206,7 +268,6 @@ video {
 }
 
 .btn-primary {
-    max-width: 400px;
     border-radius: 0px;
     border-width: 2px;
     border-color: white;
@@ -309,7 +370,6 @@ video {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    max-width: 400px;
 }
 
 .form-control:focus {
