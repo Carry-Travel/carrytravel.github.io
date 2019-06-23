@@ -44,223 +44,235 @@
 </head>
 
 <body>
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="mx-auto pt-1">
-                    <img src="images/logo-balloon.png" style="width:250px">
-                </div>
-                <div class="d-block d-md-none" style="position:absolute;top:20px;right:20px;">
-                    <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm btn-mobile"><span class="ion-md-person"></span></a>
-                </div>
-                <div class="d-none d-md-block" style="position:absolute;top:20px;right:40px;">
-                    <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm">Log In</a>
-                </div>
-                <div class="col-5 offset-0 col-sm-3 offset-sm-1 col-md-3 offset-md-0 col-xl-2 offset-xl-0 balloons" style="margin-top:45px">
-                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="4" style="width:75%">
-                </div>
-                <div class="d-none d-md-block col-md-2 offset-md-2 col-xl-1 offset-xl-2 balloons" style="margin-top:400px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2">
-                </div>
-                <div class="d-none d-md-block col-md-2 offset-md-8 col-xl-1 offset-xl-8 balloons" style="margin-top:50px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="1" style="width:75%">
-                </div>
-                <div class="col-5 offset-7 col-sm-3 offset-sm-9 col-md-3 offset-md-8 col-xl-2 offset-xl-8 balloons" style="margin-top:300px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="3">
-                </div>
-                <div class="col-5 offset-3 col-sm-3 offset-sm-3 col-md-3 offset-md-4 col-xl-2 offset-xl-4 balloons" style="margin-top:380px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
-                </div>
-                <div class="d-none d-md-block col-md-2 offset-md-6 col-xl-1 offset-xl-6 balloons" style="margin-top:350px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.5" style="width:60%">
-                </div>
-                <div class="d-none d-md-block col-md-3 offset-md-9 col-xl-2 offset-xl-10 balloons" style="margin-top:250px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
-                </div>
-                <div class="col-4 offset-0 col-sm-3 offset-sm-0 col-md-2 offset-md-0 col-xl-1 offset-xl-1 balloons" style="margin-top:270px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.7" style="width:70%">
-                </div>
-            </div>
-            <div class="row>">
-                <div class="col-md-5 offset-md-1">
-                    <div class="banner container pt-3">
-                        <h1>Book travel at the speed of sound. </h1>
+    <div id="wrapper">
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="mx-auto pt-1">
+                        <img src="images/logo-balloon.png" style="width:250px">
                     </div>
-                    <div class="container pt-3">
-                        <h2>Do what you're good at and leave travel to us. Carry plans, books, and supports corporate travel over Slack and SMS.</h2>
+                    <div class="d-block d-md-none" style="position:absolute;top:20px;right:20px;">
+                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm btn-mobile"><span class="ion-md-person"></span></a>
                     </div>
-                    <div class="container pt-4 offset-md-0 col-md-8">
-                        <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
-                        <form id="waitlist-form" style="display: none">
-                            <div class="input-group">
-                                <input required type="email" class="waitlist-entry form-control" name="waitlistemail" id="waitlist-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                                <button class="btn-enter" type="submit" id="waitlist-submit"><span class="ti-arrow-right"></button>
-                            </div>
-                        </form>
-                        <div id="waitlist-success" class="waitlist-success" style="display: none">
-                            <h4>We'll be in touch!</h4>
-                        </div>>
+                    <div class="d-none d-md-block" style="position:absolute;top:20px;right:40px;">
+                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm">Log In</a>
+                    </div>
+                    <div class="col-5 offset-0 col-sm-3 offset-sm-1 col-md-3 offset-md-0 col-xl-2 offset-xl-0 balloons" style="margin-top:45px">
+                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="4" style="width:75%">
+                    </div>
+                    <div class="d-none d-md-block col-md-2 offset-md-2 col-xl-1 offset-xl-2 balloons" style="margin-top:400px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2">
+                    </div>
+                    <div class="d-none d-md-block col-md-2 offset-md-8 col-xl-1 offset-xl-8 balloons" style="margin-top:50px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="1" style="width:75%">
+                    </div>
+                    <div class="col-5 offset-7 col-sm-3 offset-sm-9 col-md-3 offset-md-8 col-xl-2 offset-xl-8 balloons" style="margin-top:300px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="3">
+                    </div>
+                    <div class="col-5 offset-3 col-sm-3 offset-sm-3 col-md-3 offset-md-4 col-xl-2 offset-xl-4 balloons" style="margin-top:380px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
+                    </div>
+                    <div class="d-none d-md-block col-md-2 offset-md-6 col-xl-1 offset-xl-6 balloons" style="margin-top:350px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.5" style="width:60%">
+                    </div>
+                    <div class="d-none d-md-block col-md-3 offset-md-9 col-xl-2 offset-xl-10 balloons" style="margin-top:250px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
+                    </div>
+                    <div class="col-4 offset-0 col-sm-3 offset-sm-0 col-md-2 offset-md-0 col-xl-1 offset-xl-1 balloons" style="margin-top:270px">
+                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.7" style="width:70%">
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 offset-md-1">
-                    <div class="container mt-5">
-                        <h2>Carry is an always-available travel agent on Slack and SMS that saves you time and money.</h2>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="container mt-5">
-                        <img src="images/bubble.png" style="width:100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-md-10 offset-md-1">
-                    <hr/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-1">
-                    <div class="container mt-5 media">
-                        <div class="circle-icon mr-4"><span class="ti-check-box"></span></div>
-                        <div class="media-body">
-                            <h3>Effortless booking</h3>
-                            <p>We handle all the trip research, so that you can focus on what matters.</p>
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <div class="container banner">
+                            <h1>Book travel at the speed of sound. </h1>
                         </div>
-                    </div>
-                    <div class="container mt-4 media">
-                        <div class="circle-icon mr-4"><span class="ti-heart"></span></div>
-                        <div class="media-body">
-                            <h3>Personalized itineraries</h3>
-                            <p>We’ll remember your preferences and send you bespoke itineraries customized to your needs.</p>
+                        <div class="container pt-3">
+                            <h2>Do what you're good at and leave travel to us. Carry plans, books, and supports corporate travel over Slack and SMS.</h2>
                         </div>
-                    </div>
-                    <div class="container mt-4 media">
-                        <div class="circle-icon mr-4"><span class="ti-money"></span></div>
-                        <div class="media-body">
-                            <h3>Exclusive rates</h3>
-                            <p>Get access to private rates that can’t be found on any online travel booking platform.</p>
-                        </div>
-                    </div>
-                    <div class="container mt-4 media">
-                        <div class="circle-icon mr-4"><span class="ti-bolt"></span></div>
-                        <div class="media-body">
-                            <h3>24/7 support</h3>
-                            <p>We handle flight changes, hotel transfers, early check-in, and preemptively solve any issues that arise.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="container mt-4">
-                        <img src="images/product_demo.gif" style="width:100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-md-10 offset-md-1">
-                    <hr/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 offset-md-1 d-flex">
-                    <div class="container mt-5 card flex-fill py-3">
-                        <h3 class="card-title py-3 text-center">For companies</h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Automatic travel billing to corporate account</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Top flight and hotel options curated for business travelers</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Seamless integration into business tools such as Slack</p></li>
-                            <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>20-40% savings on yearly travel spend through exclusive rates</p></li>
-                        </ul>
-                        <div class="container pt-4 mb-3" style="margin-top:auto">
-                            <button class="btn btn-primary btn-lg" id="left-btn">Get Carry for your company</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 order-md-last">
-                    <form id="business-form" style="display: none">
-                        <br>
-                        <div class='row'>
-                            <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>    
-                                <div class='form-group'>
-                                    <label for="name">Name</label>
-                                    <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                        <div class="container pt-4">
+                            <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
+                            <form id="waitlist-form" style="display: none">
+                                <div class="input-group">
+                                    <input required type="email" class="waitlist-entry form-control" name="waitlistemail" id="waitlist-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                    <button class="btn-enter" type="submit" id="waitlist-submit"><span class="ti-arrow-right"></button>
                                 </div>
-                            </div>
-                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
-                                <div class='form-group'>
-                                    <label for="phone_number">Phone Number</label>
-                                    <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
-                                </div>
-                            </div>
-                            <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-0'>
-                                <div class='form-group'>
-                                    <label for="email">Email</label>
-                                    <input class="form-control" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
-                                </div>
-                            </div>
-                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
-                                <div class='button-container pt-4'>
-                                    <div class='button-wrapper'>
-                                        <button class="btn btn-primary" type="submit" id="submit-business-form">Submit</button>
-                                    </div>
-                                </div>
+                            </form>
+                            <div id="waitlist-success" class="waitlist-success" style="display: none">
+                                <h4>We'll be in touch!</h4>
+                            </div>>
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-md-0">
+                        <div id="video" class="container pt-5 demo">
+                            <video class="" id="demo_video"
+                                   poster="images/demo_poster.pnng"
+                                   autoplay="" loop=""
+                                   muted="">
+                                <source src="images/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content pt-5">
+            <div class="container-fluid">
+                <div class="row pt-5">
+                    <div class="col-md-6 offset-md-1">
+                        <div class="container mt-5">
+                            <h2>Carry is an always-available travel agent on Slack and SMS that saves you time and money.</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container mt-5">
+                            <img src="images/bubble.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-md-10 offset-md-1">
+                        <hr/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-1">
+                        <div class="container mt-5 media">
+                            <div class="circle-icon mr-4"><span class="ti-check-box"></span></div>
+                            <div class="media-body">
+                                <h3>Effortless booking</h3>
+                                <p>We handle all the trip research, so that you can focus on what matters.</p>
                             </div>
                         </div>
-                    </form>
+                        <div class="container mt-4 media">
+                            <div class="circle-icon mr-4"><span class="ti-heart"></span></div>
+                            <div class="media-body">
+                                <h3>Personalized itineraries</h3>
+                                <p>We’ll remember your preferences and send you bespoke itineraries customized to your needs.</p>
+                            </div>
+                        </div>
+                        <div class="container mt-4 media">
+                            <div class="circle-icon mr-4"><span class="ti-money"></span></div>
+                            <div class="media-body">
+                                <h3>Exclusive rates</h3>
+                                <p>Get access to private rates that can’t be found on any online travel booking platform.</p>
+                            </div>
+                        </div>
+                        <div class="container mt-4 media">
+                            <div class="circle-icon mr-4"><span class="ti-bolt"></span></div>
+                            <div class="media-body">
+                                <h3>24/7 support</h3>
+                                <p>We handle flight changes, hotel transfers, early check-in, and preemptively solve any issues that arise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container mt-4">
+                            <img src="images/product_demo.gif" style="width:100%">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5 d-flex">
+            </div>
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-md-10 offset-md-1">
+                        <hr/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 d-flex">
                         <div class="container mt-5 card flex-fill py-3">
-                            <h3 class="card-title py-3 text-center">For individuals</h3>
+                            <h3 class="card-title py-3 text-center">For companies</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Expert itinerary planning from world-class travel team</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Contact us from Messenger, SMS, or email</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Make travel stress-free with 24/7 support</p></li>
-                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Access exclusive rates on international travel</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Automatic travel billing to corporate account</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Top flight and hotel options curated for business travelers</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Seamless integration into business tools such as Slack</p></li>
+                                <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>20-40% savings on yearly travel spend through exclusive rates</p></li>
                             </ul>
                             <div class="container pt-4 mb-3" style="margin-top:auto">
-                                <button class="btn btn-primary btn-lg" id="right-btn">Request access to our private beta</button>
+                                <button class="btn btn-primary btn-lg" id="left-btn">Get Carry for your company</button>
                             </div>
                         </div>
-                </div>
-                <div class="col-12">
-                    <form id="individual-form" style="display: none">
-                        <br>
-                        <div class='row'>
-                            <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-1'>    
-                                <div class='form-group'>
-                                    <label for="name">Name</label>
-                                    <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                    </div>
+                    <div class="col-12 order-md-last">
+                        <form id="business-form" style="display: none">
+                            <br>
+                            <div class='row'>
+                                <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>    
+                                    <div class='form-group'>
+                                        <label for="name">Name</label>
+                                        <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-0'>
-                                <div class='form-group'>
-                                    <label for="phone_number">Phone Number</label>
-                                    <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                                <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                    <div class='form-group'>
+                                        <label for="phone_number">Phone Number</label>
+                                        <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
-                                <div class='button-container pt-4'>
-                                    <div class='button-wrapper'>
-                                        <button class="btn btn-primary" type="submit" id="submit-individual-form">Submit</button>
+                                <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-0'>
+                                    <div class='form-group'>
+                                        <label for="email">Email</label>
+                                        <input class="form-control" id="email" name="email" required="true" size="30" type="text" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                                <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                    <div class='button-container pt-4'>
+                                        <div class='button-wrapper'>
+                                            <button class="btn btn-primary" type="submit" id="submit-business-form">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div class="col-md-5 d-flex">
+                            <div class="container mt-5 card flex-fill py-3">
+                                <h3 class="card-title py-3 text-center">For individuals</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Expert itinerary planning from world-class travel team</p></li>
+                                    <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Contact us from Messenger, SMS, or email</p></li>
+                                    <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Make travel stress-free with 24/7 support</p></li>
+                                    <li class="list-group-item pb-0"><p><span class="ti-check mr-2 tick"></span>Access exclusive rates on international travel</p></li>
+                                </ul>
+                                <div class="container pt-4 mb-3" style="margin-top:auto">
+                                    <button class="btn btn-primary btn-lg" id="right-btn">Request access to our private beta</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12">
+                        <form id="individual-form" style="display: none">
+                            <br>
+                            <div class='row'>
+                                <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-1'>    
+                                    <div class='form-group'>
+                                        <label for="name">Name</label>
+                                        <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
+                                    </div>
+                                </div>
+                                <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-0'>
+                                    <div class='form-group'>
+                                        <label for="phone_number">Phone Number</label>
+                                        <input class="form-control" id="phone_number" name="phone_number" required="true" size="30" type="text" placeholder="Phone Number"/>
+                                    </div>
+                                </div>
+                                <div class='col-sm-10 offset-sm-1 col-lg-2 offset-lg-0'>
+                                    <div class='button-container pt-4'>
+                                        <div class='button-wrapper'>
+                                            <button class="btn btn-primary" type="submit" id="submit-individual-form">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="footer">
         <div class="light-bg py-5" id="contact">
             <div class="container">

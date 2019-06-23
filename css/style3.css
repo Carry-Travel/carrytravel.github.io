@@ -80,16 +80,14 @@ p {
 
 /* Hero */
 .hero {
-    width: 100vw;
-    height: 800px;
 }
 
 .hero-bg {
     position: absolute;
     overflow: visible;
     width: 100vw;
-    height: 800px;
-    top:-200px;
+    height: 1200px;
+    top:-600px;
     transform: skewY(-11deg);
     background-image: linear-gradient(70deg,rgb(0,21,50),#005075);
     z-index: -1;   
@@ -105,8 +103,18 @@ p {
 }
 
 .banner {
+    margin-top: 100px;
     color: white;
-    margin-top: 10vh;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media (max-height:575px) {
@@ -118,7 +126,6 @@ p {
 /* Content */
 .content {
     position: relative;
-    background-color: rgb(0,21,50);
     z-index: 100;
     width: 100vw;
     padding-bottom: 100px;
@@ -147,6 +154,7 @@ p {
 }
 
 .btn-primary {
+    max-width: 400px;
     border-radius: 0px;
     border-width: 2px;
     border-color: white;
@@ -249,6 +257,7 @@ p {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    max-width: 400px;
 }
 
 .form-control:focus {
