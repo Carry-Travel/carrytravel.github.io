@@ -17,8 +17,9 @@ h1 {
 h2 {
     font-weight: 300;
     font-size: 20px;
-    color: rgb(240, 240, 240);
+    color: rgb(230, 230, 230);
     line-height: 1.2;
+    word-spacing: +2px;
 }
 
 h3 {
@@ -91,7 +92,7 @@ p {
 .balloon-align {
     display: block;
     margin: 0 auto;
-    opacity: 0.05;
+    opacity: 0.04;
 }
 
 .banner {
@@ -142,10 +143,10 @@ p {
     border-color: white;
     color: white;
     background-color: transparent;
-    width: 50%;
+    width: 100%;
     font-weight: 700;
     font-size: 12px;
-    padding: 0.8rem 0.5rem;
+    padding: 0.8rem 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
@@ -160,18 +161,9 @@ p {
     width: 100px;
     font-weight: 700;
     font-size: 12px;
-    padding: 0.8rem 0.5rem;
+    padding: 0.8rem 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:not([disabled]):not(.disabled).active,
-.btn-primary:not([disabled]):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
-    background-color: #0099FF;
-    color: white;
 }
 
 .btn-mobile {
@@ -188,8 +180,8 @@ p {
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     border-color: #0099FF;
-    background-color: #0099FF;
-    color: #FFF;
+    background-color: transparent;
+    color: #0099FF;
 }
 
 .btn-secondary:hover,
@@ -198,8 +190,8 @@ p {
 .btn-secondary:not([disabled]):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {
     border-color: #0099FF;
-    background-color: #0099FF;
-    color: #FFF;
+    background-color: transparent;
+    color: #0099FF;
 }
 
 .btn:focus,
@@ -208,28 +200,56 @@ p {
 .btn-primary:focus {
     box-shadow: none !important;
     outline: none !important;
+    border-color: #0099FF;
+    color: #0099FF;
 }
 
-::-webkit-input-placeholder {
-    font-weight: 300;
+.btn-enter {
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    right: 5px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    z-index: 100;
 }
 
-:-ms-input-placeholder {
-    font-weight: 300;
-}
-
-input {
-    font-weight: 300;
-}
-
-.form-control {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-input:focus {
+.btn-enter:focus,
+.btn-enter:active,
+.btn-enter:hover {
     box-shadow: none !important;
+    outline: none !important;
+    color: #0099FF;
+}
+
+
+
+.waitlist-entry {
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+    color: white !important;
+    background-color: transparent !important;
+    box-sizing: border-box !important;
+    line-height: 1.5 !important;
+    padding: 0.8rem 2.4rem 0.8rem 0.8rem !important;
+    height: auto;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-control:focus {
+    border-color: #0099FF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.waitlist-entry:focus {
+    padding: 0.8rem 2.4rem 0.8rem 0.8rem !important;
 }
 
 label {

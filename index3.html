@@ -90,8 +90,16 @@
                     <div class="container pt-3">
                         <h2>Do what you're good at and leave travel to us. Carry plans, books, and supports corporate travel over Slack and SMS.</h2>
                     </div>
-                    <div class="container pt-3">
-                        <button class="btn btn-primary">Join the waitlist</button>
+                    <div class="container pt-4 offset-md-0 col-md-6">
+                        <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
+                        <form id="waitlist-form" style="display: none">
+                            <div class="input-group">
+                                <input required type="email" class="waitlist-entry form-control" id="work-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn-enter" type="submit" id="waitlist-submit"><span class="ti-arrow-right"></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -287,6 +295,17 @@
 
         $('#right-btn').click(function() {
             $("#individual-form").toggle();
+            var form2 = document.getElementById("business-form");
+            if (form2.style.display != "none") {
+                form2.style.display = "none";
+            }
+        });
+
+        $('#waitlist-btn').click(function() {
+            $("#waitlist-btn").toggle();
+            $("#waitlist-form").fadeToggle();
+            
+            $("#work-email").focus();
             var form2 = document.getElementById("business-form");
             if (form2.style.display != "none") {
                 form2.style.display = "none";
