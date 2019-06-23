@@ -27,6 +27,15 @@ h3 {
     color: rgb(13,28,84);
 }
 
+h4 {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0.8rem 0.8rem 0.8rem 0rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #0099FF;
+}
+
 a {
     color: white;
 }

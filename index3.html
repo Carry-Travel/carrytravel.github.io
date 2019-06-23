@@ -90,16 +90,17 @@
                     <div class="container pt-3">
                         <h2>Do what you're good at and leave travel to us. Carry plans, books, and supports corporate travel over Slack and SMS.</h2>
                     </div>
-                    <div class="container pt-4 offset-md-0 col-md-6">
+                    <div class="container pt-4 offset-md-0 col-md-8">
                         <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
                         <form id="waitlist-form" style="display: none">
                             <div class="input-group">
-                                <input required type="email" class="waitlist-entry form-control" id="work-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn-enter" type="submit" id="waitlist-submit"><span class="ti-arrow-right"></button>
-                                </div>
+                                <input required type="email" class="waitlist-entry form-control" name="waitlistemail" id="waitlist-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                <button class="btn-enter" type="submit" id="waitlist-submit"><span class="ti-arrow-right"></button>
                             </div>
                         </form>
+                        <div id="waitlist-success" class="waitlist-success" style="display: none">
+                            <h4>We'll be in touch!</h4>
+                        </div>>
                     </div>
                 </div>
             </div>
@@ -304,19 +305,34 @@
         $('#waitlist-btn').click(function() {
             $("#waitlist-btn").toggle();
             $("#waitlist-form").fadeToggle();
-            
-            $("#work-email").focus();
-            var form2 = document.getElementById("business-form");
-            if (form2.style.display != "none") {
-                form2.style.display = "none";
-            }
+            $("#waitlist-email").focus();
         });
-    
-        var $busform = $('form#business-form'),
+
+        
         url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
+        url2 = 'https://script.google.com/macros/s/AKfycby9cd3S1Z2_AKLdS-2JISNuF4UZveLMcGXeMHr4K4KTR0qIfQk/exec'
+
+        var $waitform = $('form#waitlist-form')
+        $('#waitlist-form').on('submit', function(e) {
+            e.preventDefault();
+            console.log($waitform);
+            var jqxhr = $.ajax({
+                url: url2,
+                method: "GET",
+                dataType: "json",
+                data: $waitform.serializeObject(),
+                success: function() {
+                    $("#waitlist-form").toggle();
+                    $("#waitlist-success").fadeToggle();
+                }
+                });
+        })
+    
+        var $busform = $('form#business-form')
     
         $('#submit-business-form').on('click', function(e) {
             e.preventDefault();
+            console.log($busform);
             var jqxhr = $.ajax({
                 url: url,
                 method: "GET",
