@@ -94,7 +94,32 @@
                                 <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                             </div>
                             <div class="pt-4 animate-slide-left" style="max-width:400px;">
-                                <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
+                              <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Phone number</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Email address</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Join the waitlist</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                                <button id="waitlist-btn"class="btn btn-primary" data-toggle="modal" data-target="#modalLoginForm">Join the waitlist</button>
                                 <form id="waitlist-form" style="display: none">
                                     <div class="input-group">
                                         <input required type="email" class="waitlist-entry form-control" name="waitlistemail" id="waitlist-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
@@ -198,7 +223,7 @@
                         <form id="business-form" style="display: none">
                             <br>
                             <div class='row'>
-                                <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>    
+                                <div class='col-sm-10 offset-sm-1 col-lg-3 offset-lg-1'>
                                     <div class='form-group'>
                                         <label for="name">Name</label>
                                         <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
@@ -244,7 +269,7 @@
                         <form id="individual-form" style="display: none">
                             <br>
                             <div class='row'>
-                                <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-1'>    
+                                <div class='col-sm-10 offset-sm-1 col-lg-4 offset-lg-1'>
                                     <div class='form-group'>
                                         <label for="name">Name</label>
                                         <input class="form-control" id="name" name="name" size="30" type="text" placeholder="Full Name"/>
@@ -317,7 +342,7 @@
             $("#waitlist-email").focus();
         });
 
-        
+
         url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
         url2 = 'https://script.google.com/macros/s/AKfycby9cd3S1Z2_AKLdS-2JISNuF4UZveLMcGXeMHr4K4KTR0qIfQk/exec'
 
@@ -336,9 +361,9 @@
                 }
                 });
         })
-    
+
         var $busform = $('form#business-form')
-    
+
         $('#submit-business-form').on('click', function(e) {
             e.preventDefault();
             console.log($busform);
@@ -380,7 +405,7 @@
     <script>
         var rellax = new Rellax('.rellax');
     </script>
-    
+
 </body>
 
 </html>
