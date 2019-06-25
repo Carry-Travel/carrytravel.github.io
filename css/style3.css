@@ -306,6 +306,22 @@ video {
 
 }
 
+.btn-primary2 {
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: blue;
+    color: blue;
+    background-color: transparent;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0.8rem 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+}
+
+
 .btn-account {
     border-radius: 0px;
     border-width: 2px;
@@ -336,6 +352,16 @@ video {
     border-color: #0099FF;
     background-color: transparent;
     color: #0099FF;
+}
+
+.btn-primary2:hover,
+.btn-primary2:active,
+.btn-primary2:not([disabled]):not(.disabled).active,
+.btn-primary2:not([disabled]):not(.disabled):active,
+.show>.btn-primary2.dropdown-toggle {
+    border-color: blue;
+    background-color: transparent;
+    color: blue;
 }
 
 .btn-secondary:hover,
