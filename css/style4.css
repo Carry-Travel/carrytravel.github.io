@@ -6,10 +6,15 @@ body {
 }
 
 .css-q77mdb {
-padding-top:30px;
+padding-top:40px;
 background:##1723d6;
 color:#FFF;
 text-align:center;
+}
+
+.form-control {
+  width: 420px;
+  margin-left: 5px;
 }
 
 .separator {
@@ -21,9 +26,18 @@ text-align:center;
 
 }
 
-.quoteText {
-  font-size:18px;
+.fa-twitter {
+  color: #007bff; 
 }
+
+.modal-dialog {
+  width: 200px;
+}
+
+.quoteText {
+  font-size:22px;
+}
+
 
 .quoteAuthor {
   font-size: 18px;
@@ -34,6 +48,11 @@ text-align:center;
   border-radius: 50%;
   display: block;
   margin: 20px auto 18px;
+}
+
+.modal-content {
+    /* 80% of window height */
+    height: 90%;
 }
 
 h1 {
