@@ -2,7 +2,38 @@
 body {
     font-family: 'Lato', sans-serif;
     position: relative;
-    background-color: rgb(0,21,50);
+    background-color: black;
+}
+
+.css-q77mdb {
+padding-top:30px;
+background:##1723d6;
+color:#FFF;
+text-align:center;
+}
+
+.separator {
+    display: block;
+    width: 42px;
+    height: 6px;
+    box-shadow: inset 0 4px 0 0 #5861e2;
+    margin: 2px auto 6px;
+
+}
+
+.quoteText {
+  font-size:18px;
+}
+
+.quoteAuthor {
+  font-size: 18px;
+}
+
+.quoteImage {
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto 18px;
 }
 
 h1 {
@@ -25,6 +56,7 @@ h2 {
 h3 {
     font-weight: 400;
     color: rgb(13,28,84);
+    color: white;
 }
 
 h4 {
@@ -37,7 +69,7 @@ h4 {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -97,7 +129,6 @@ p {
     height: 1200px;
     top:-600px;
     transform: skewY(-11deg);
-    background-image: linear-gradient(70deg,rgb(0,21,50),#005075);
     z-index: -1;
 }
 .balloons {
@@ -256,7 +287,7 @@ video {
     padding-top: 100px;
     padding-bottom: 100px;
     transform: skewY(11deg);
-    background-image: linear-gradient(70deg,rgb(0,21,50),#005075);
+    background-image: linear-gradient(20deg,#bf2307,#bf2307);
     z-index: -1;
 }
 
@@ -274,7 +305,7 @@ video {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 1.5rem;
-    background-color: rgb(13,28,84);
+    background-color: #9542f4;
     font-size: 48px;
     color: white;
     text-align: center;
@@ -293,9 +324,9 @@ video {
 .btn-primary {
     border-radius: 0px;
     border-width: 2px;
-    border-color: white;
     color: white;
-    background-color: transparent;
+    border-color: #1723d6;
+    background-color: #1723d6;
     width: 100%;
     font-weight: 700;
     font-size: 12px;
@@ -305,12 +336,17 @@ video {
 
 }
 
+
+.card-title.py-3.text-center {
+  color: black;
+}
+
 .btn-account {
     border-radius: 0px;
     border-width: 2px;
-    border-color: white;
+    border-color: #1723d6;
     color: white;
-    background-color: transparent;
+    background-color: #1723d6;
     width: 100px;
     font-weight: 700;
     font-size: 12px;
@@ -377,6 +413,13 @@ video {
 }
 
 
+.mb-2 {
+  color: black;
+}
+
+.mb-0 {
+  color: black;
+}
 
 .waitlist-entry {
     border-radius: 0px;
@@ -417,7 +460,7 @@ label {
 
 /* Footer */
 .footer {
-    background-color: rgb(13,28,84);
+    background-color: white;
     width: 100vw;
     color: white;
 }
