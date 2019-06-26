@@ -539,6 +539,15 @@ video {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
+@media (max-width: 991px) {
+    .center-mobile {
+        text-align: center;
+    }
+}
+
+.waitlist-form {
+    display:inline-block;
+}
 
 
 .waitlist-entry {
