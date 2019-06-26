@@ -160,27 +160,40 @@
                     </div>
 
 
-                      <div class="col-lg-6">
-                          <div id="video" class="container pt-4 demo animate-slide-right">
-                              <div class="video-gradient"></div>
-                              <video class="" id="demo_video"
-                                     autoplay="" loop=""
-                                     muted="">
-                                  <source src="images/demo.mp4" type="video/mp4">
-                              </video>
-                              <img src="images/Demo.png" class="demo-image">
-                          </div>
+                    <div class="col-lg-6">
+                        <div class="container pt-4 pb-5 demo animate-slide-right">
+                            <div id="desktop-video" class="d-none d-lg-block">
+                                <div class="video-gradient"></div>
+                                <video class="" id="demo_video"
+                                        autoplay="" loop=""
+                                        muted="">
+                                    <source src="images/demo.mp4" type="video/mp4">
+                                </video>
+                                <img src="images/demo.png" class="demo-image">
+                            </div>
+                            <div id="mobile-video" class="d-lg-none mobile-video">
+                                <div class="d-none video-gradient"></div>
+                                <video class="" id="demo_video"
+                                        autoplay="" loop=""
+                                        muted="">
+                                    <source src="images/phone_demo.mp4" type="video/mp4">
+                                </video>
+                                <img src="images/phone_demo.png" class="demo-image">
+                            </div>
+                            <div class="mobile-filler"></div>
+                        </div>
+                    </div>
                       </div>
                 </div>
             </div>
         </section>
         <section class="content">
-          <div class="max-w-1000 mx-auto flex mt-p120 xl:mt-p215 flex-col-reverse items-center mb-77 xl:flex-row xl:items-start xl:mb-0 px-15 xl:px-0">
+          <div class="max-w-1000 mx-auto flex xl:mt-p215 flex-col-reverse items-center mb-77 xl:flex-row xl:items-start xl:mb-0 px-15 xl:px-0">
             <div class="max-w-424 mt-x6 xl:max-w-full xl:mt-0 xl:ml-0 -ml-p15">
               <img src="images/carryflow.png" class="max-w-565 hidden xl:block">
               <img src="images/carryflow.png" class="xl:hidden" style="width: 100%">
             </div>
-            <div class="xl:mt-p260 flex-1">
+            <div class="bookingcircles">
               <div class="text-center xl:w-p362 xl:text-left mx-auto">
                 <h3 class="text-p24 font-light leading-38 m-0 text-white uppercase">Stop wasting time booking flights.</h3>
                 <p class="mt-22 text-base font-light leading-24 tracking-1 xl:leading-31 xl:tracking-normal text-indigo-lighter">Carry provides an easy and seamless experience through Slack, email and SMS.</p>

@@ -180,7 +180,6 @@ video {
     z-index: 5;
     width: 1000px;
     margin-left: -100px;
-    position: absolute;
 }
 
 .video-gradient {
@@ -193,6 +192,89 @@ video {
     height: 457px;
     z-index: 999;
 }
+
+.mobile-filler {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    video {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    video {
+        width: 393px;
+        height: auto;
+        margin-left: 130px;
+        margin-top: 82px;
+        border-radius: 5px 5px 40px 40px;
+
+    }
+    .demo-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    video {
+        width: 285px;
+        height: auto;
+        margin-left: 95px;
+        margin-top: 60px;
+        border-radius: 5px 5px 30px 30px;
+    }
+    .demo-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width:360px) and (max-width:575px) {
+    video {
+        width: 238px;
+        margin-top: 50px;
+        border-radius: 5px 5px 25px 25px;
+        left: 50%;
+        margin-left: -119px;
+    }
+    .demo-image {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        margin-left: -198px;
+    }
+    .mobile-filler {
+        height: 600px;
+    }
+}
+
+@media (max-width:359px) {
+    video {
+        display: none;
+    }
+    .demo-image {
+        display: none;
+    }
+    .mobile-filler {
+        display: none;
+    }
+    .hero-bg {
+        height: 1200px;
+        top:-800px;
+    }
+    .hero {
+        min-height: 500px;
+    }
+    .absolute {
+        top: 400px
+    }
+}
+
 
 .animate-slide-right {
     -webkit-animation: slide-right .8s;
