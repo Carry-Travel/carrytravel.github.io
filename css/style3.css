@@ -100,7 +100,7 @@ p {
     height: 1200px;
     top:-600px;
     transform: skewY(-11deg);
-    background-image: linear-gradient(70deg,rgb(0,21,50),#005075);
+    background-image: linear-gradient(70deg,rgb(0,21,50),#1586a8);
     z-index: -1;
 }
 

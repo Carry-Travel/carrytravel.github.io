@@ -350,6 +350,14 @@
             $('#modalLoginForm form input[name=email]').val($('#waitlist-form input[name=waitlistemail]').val());
         });
 
+        $('#waitlist-form').on('keyup keypress', function(e) {
+            var keyCode = e.keyCode || e.which;
+            if (keyCode === 13) { 
+                e.preventDefault();
+                $('#waitlist-submit').click();
+            }
+        });
+
         var $waitform = $('form#modal-form')
         $('#modal-form').on('submit', function(e) {
             e.preventDefault();
@@ -366,7 +374,7 @@
                     $("#waitlist-success").fadeToggle();
                 }
                 }); **/
-        })
+        });
     </script>
 
     <!-- jQuery and Bootstrap -->
