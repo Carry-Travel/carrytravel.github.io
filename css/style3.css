@@ -58,13 +58,13 @@ p {
 
 @media (max-width:1199px) {
     h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 
 @media (max-width:991px) {
     h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -303,14 +303,14 @@ video {
     padding: 0.8rem 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-
 }
 
 .btn-primary2 {
     border-radius: 0px;
     border-width: 2px;
-    border-color: blue;
-    color: blue;
+    border-color: rgb(0,21,50);
+    background-color: rgb(0,21,50) !important;
+    color: white;
     background-color: transparent;
     width: 100%;
     font-weight: 700;
@@ -318,7 +318,7 @@ video {
     padding: 0.8rem 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-
+    max-width: 300px;
 }
 
 
@@ -354,34 +354,40 @@ video {
     color: #0099FF;
 }
 
+.btn-account:hover,
+.btn-account:active,
+.btn-account:not([disabled]):not(.disabled).active,
+.btn-account:not([disabled]):not(.disabled):active,
+.show>.btn-account.dropdown-toggle {
+    border-color: #0099FF;
+    background-color: transparent;
+    color: #0099FF;
+}
+
 .btn-primary2:hover,
 .btn-primary2:active,
 .btn-primary2:not([disabled]):not(.disabled).active,
 .btn-primary2:not([disabled]):not(.disabled):active,
 .show>.btn-primary2.dropdown-toggle {
-    border-color: blue;
-    background-color: transparent;
-    color: blue;
-}
-
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:not([disabled]):not(.disabled).active,
-.btn-secondary:not([disabled]):not(.disabled):active,
-.show>.btn-secondary.dropdown-toggle {
     border-color: #0099FF;
-    background-color: transparent;
-    color: #0099FF;
+    color: white;
+    background-color: #0099FF !important;
 }
 
-.btn:focus,
-.btn:active,
-.btn-primary:active,
-.btn-primary:focus {
+.btn-primary:focus, 
+.btn-account:focus {
     box-shadow: none !important;
     outline: none !important;
     border-color: #0099FF;
     color: #0099FF;
+}
+
+.btn-primary2:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #0099FF;
+    color: white;
+    background-color: #0099FF !important;
 }
 
 .btn-enter {
@@ -401,6 +407,7 @@ video {
     box-shadow: none !important;
     outline: none !important;
     color: #0099FF;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
 
@@ -447,4 +454,73 @@ label {
     background-color: rgb(13,28,84);
     width: 100vw;
     color: white;
+}
+
+/* Modal */
+.modal-dialog {
+    border-style: none;
+    transform: translateX(-50%) translateY(-50%) !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    width: 600px;
+
+}
+
+@media (max-width: 359px) {
+    .modal-dialog {
+        transform: translateX(-50%) !important;
+        width: 280px;
+        top: 100px;
+    }
+}
+
+@media (min-width: 360px) and (max-width:767px) {
+    .modal-dialog {
+        transform: translateX(-50%) !important;
+        width: 312px;
+        top: 150px;
+    }
+}
+
+.modal-form-input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 0px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.modal-form-input:active {
+    border-color: #0099FF;
+}
+.form-group {
+    margin-bottom: 2rem;
+}
+.modal-content {
+    border-style: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.iti__flag {background-image: url("../images/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../images/flags@2x.png");}
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti__selected-flag:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: rgba(0, 0, 0, 0.05)    
 }
