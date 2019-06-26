@@ -33,6 +33,9 @@
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Phone validation -->
+    <link rel="stylesheet" href="css/intlTelInput.css">
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.serialize-object.min.js"></script>
 
@@ -48,45 +51,46 @@
 <body>
     <div id="wrapper">
         <section class="hero">
-            <div class="hero-bg"></div>
+            <div class="hero-bg">
+                <div class="absolute">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4 col-lg-3 balloons" style="margin-top:45px">
+                                <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="6" style="width:75%">
+                            </div>
+                            <div class="col-3 col-lg-2 balloons" style="margin-top:400px">
+                                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="3">
+                            </div>
+                            <div class="d-none d-lg-block col-lg-2 balloons" style="margin-top:200px">
+                                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2" style="width:75%">
+                            </div>
+                            <div class="d-none d-lg-block col-lg-1 balloons" style="margin-top:300px">
+                                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="4">
+                            </div>
+                            <div class="d-none d-lg-block col-lg-2 balloons" style="margin-top:380px">
+                                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="4" style="width:60%">
+                            </div>
+                            <div class="col-5 col-lg-2 balloons" style="margin-top:120px">
+                                    <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="5" style="width:70%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="mx-auto pt-1 logo animate-slide-down">
                         <img src="images/logo-balloon.png" style="width:180px;margin-top: 9px;">
                     </div>
                     <div class="d-block d-md-none" style="position:absolute;top:20px;right:20px;">
-                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm btn-mobile"><span class="ion-md-person"></span></a>
+                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-account btn-sm btn-mobile"><span class="ion-md-person"></span></a>
                     </div>
                     <div class="d-none d-md-block" style="position:absolute;top:20px;right:40px;">
-                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-secondary btn-account btn-sm">Log In</a>
-                    </div>
-                    <div class="col-5 offset-0 col-sm-3 offset-sm-1 col-md-3 offset-md-0 col-xl-2 offset-xl-0 balloons" style="margin-top:45px">
-                        <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="4" style="width:75%">
-                    </div>
-                    <div class="d-none d-md-block col-md-2 offset-md-2 col-xl-1 offset-xl-2 balloons" style="margin-top:400px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2">
-                    </div>
-                    <div class="d-none d-md-block col-md-2 offset-md-8 col-xl-1 offset-xl-8 balloons" style="margin-top:50px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="1" style="width:75%">
-                    </div>
-                    <div class="col-5 offset-7 col-sm-3 offset-sm-9 col-md-3 offset-md-8 col-xl-2 offset-xl-8 balloons" style="margin-top:300px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="3">
-                    </div>
-                    <div class="col-5 offset-3 col-sm-3 offset-sm-3 col-md-3 offset-md-4 col-xl-2 offset-xl-4 balloons" style="margin-top:380px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
-                    </div>
-                    <div class="d-none d-md-block col-md-2 offset-md-6 col-xl-1 offset-xl-6 balloons" style="margin-top:350px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.5" style="width:60%">
-                    </div>
-                    <div class="d-none d-md-block col-md-3 offset-md-9 col-xl-2 offset-xl-8 balloons" style="margin-top:250px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="2.5" style="width:60%">
-                    </div>
-                    <div class="col-4 offset-0 col-sm-3 offset-sm-0 col-md-2 offset-md-0 col-xl-1 offset-xl-1 balloons" style="margin-top:270px">
-                            <img src="images/balloon.svg" class="rellax balloon-align" data-rellax-speed="0.7" style="width:70%">
+                        <a href="https://app.carry.travel/login" target="_blank" class="btn btn-account btn-sm">Log In</a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-lg-5">
                         <div class="container">
                             <div class="banner animate-slide-left">
                                 <h1>Travel.</h1>
@@ -95,58 +99,60 @@
                             <div class="pt-3 animate-slide-left">
                                 <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                             </div>
-
-                            <div class="pt-4 animate-slide-left">
-                              <div class="modal fade" form id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                              aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content" style="width: 280px;height: 300px;padding: 15px">
-                                  <form id="form" class="needs-validation" novalidate="">
-                                      <div class="form-group" style="width: 250px">
-                                          <label for="exampleInputEmail1">Your Name <em class="required">*</em></label>
-                                          <input type="Name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" required="">
-                                          <div class="invalid-feedback">
-                                              Please add your name
-                                          </div>
-                                      </div>
-                                      <div class="form-group" style="width: 250px">
-                                          <label for="exampleInputPassword1">Your Email <em class="required">*</em></label>
-                                          <input type="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
-                                          <div class="invalid-feedback">
-                                              Please add a valid email
-                                          </div>
-                                      </div>
-                                      <button type="submit" class="btn btn-primary2 btn-givi hvr-grow-shadow hvr-back-pulse">Submit</button>
-                                  </form>
-                                  <div id="success" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                      <div class="modal-dialog">
-                                          <div class="modal-content" style="width: 280px;height: 300px;padding: 15px">
-                                              <mb-2>Thanks, we're excited to get you started!</mb-2><p></p>
-                                              <mb-2>If you want to skip the wait, the fastest way is to be referred by someone already using Carry.</mb-2><p></p>
-                                              <mb-2>Kashish Gupta</mb-2><p></p>
-                                              <mb-2>P.S. Share us on Twitter!</mb-2>
-                                              <p>
-                                                  </p><a href="#" class="fa fa-twitter"></a>
-                                             <p></p>
-                                          </div>
-                                      </div>
-                                  </div>
+                            <div class="pt-4 animate-slide-left" style="max-width:400px;">
+                                <button id="waitlist-btn"class="btn btn-primary">Join the waitlist</button>
+                                <form id="waitlist-form" style="display: none">
+                                    <div class="input-group">
+                                        <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                        <button class="btn-enter" type="button" data-toggle="modal" data-target="#modalLoginForm" id="waitlist-submit"><span class="ti-arrow-right"></button>
                                     </div>
-                                  </div>
+                                </form>
+                            </div>
+                            <div class="modal fade" form id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                              aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content container-fluid">
+                                        <form id="modal-form">
+                                            <div class="modal-body mt-4 mb-4 row">
+                                                <div class="form-group col-12">
+                                                    <input required class="form-control modal-form-input" name="name" id="waitlist-name" aria-describedby="nameHelp" placeholder="Name">
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <input required type='email' class="form-control modal-form-input" name="email" id="waitlist-email" aria-describedby="emailHelp" placeholder="Email">
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <input type='tel' pattern="^(\(?\+?[0-9]*\)?)?[0-9_\- \(\)]*$" oninvalid="setCustomValidity('Please enter a valid phone number.')" class="form-control modal-form-input" name="phone" id="waitlist-phone" aria-describedby="phoneHelp" placeholder="Phone Number (Optional)">
+                                                </div>
+                                                <div class="col-12" style="text-align: center">
+                                                    <button id="modal-submit" type="submit" class="btn btn-primary2">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div id="success" class="modal-body mt-4 mb-4 row" style="display: none">
+                                            <div class="col-12">
+                                                <mb-2>Thanks, we're excited to get you started!</mb-2><p></p>
+                                                <mb-2>If you want to skip the wait, the fastest way is to be referred by someone already using Carry.</mb-2><p></p>
+                                                <mb-2>Kashish Gupta</mb-2><p></p>
+                                                <mb-2>P.S. Share us on Twitter!</mb-2>
+                                                <p>
+                                                </p><a href="#" class="fa fa-twitter"></a>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <a href="waitlist-btn"class="btn btn-primary" data-toggle="modal" data-target="#modalLoginForm">Join the waitlist</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-6">
+                    <div class="col-lg-7">
                         <div id="video" class="container pt-5 demo animate-slide-right">
-                            <video class="" id="demo_video"
+                            <img src="images/demo.gif" style="width:900px">
+                            <!--<video class="" id="demo_video"
                                    autoplay="" loop=""
                                    muted="">
                                 <source src="images/demo.mp4" type="video/mp4">
-                            </video>
+                            </video>-->
                         </div>
                     </div>
                 </div>
@@ -328,37 +334,38 @@
     </section>
 
     <script>
-        $('#left-btn').click(function() {
-            $("#business-form").toggle();
-            var form1 = document.getElementById("individual-form");
-            if (form1.style.display != "none") {
-                form1.style.display = "none";
-            }
-        });
-
-        $('#right-btn').click(function() {
-            $("#individual-form").toggle();
-            var form2 = document.getElementById("business-form");
-            if (form2.style.display != "none") {
-                form2.style.display = "none";
-            }
-        });
-
         $('#waitlist-btn').click(function() {
             $("#waitlist-btn").toggle();
             $("#waitlist-form").fadeToggle();
-            $("#waitlist-email").focus();
+            $("#initial-email").focus();
         });
 
+        $('#waitlist-submit').click(function() {
+            $("#modal-form").toggle(true);
+            $("#success").toggle(false);
+        });
 
-        url = 'https://script.google.com/macros/s/AKfycbwuAguC3a0Tajl8QDbfjh64EUxFsw9-aCi1tSv20YmkyXZFIBk/exec'
         url2 = 'https://script.google.com/macros/s/AKfycby9cd3S1Z2_AKLdS-2JISNuF4UZveLMcGXeMHr4K4KTR0qIfQk/exec'
 
-        var $waitform = $('form#waitlist-form')
-        $('#waitlist-form').on('submit', function(e) {
+        $('#waitlist-submit').click(function() {
+            $('#modalLoginForm form input[name=email]').val($('#waitlist-form input[name=waitlistemail]').val());
+        });
+
+        $('#waitlist-form').on('keyup keypress', function(e) {
+            var keyCode = e.keyCode || e.which;
+            if (keyCode === 13) { 
+                e.preventDefault();
+                $('#waitlist-submit').click();
+            }
+        });
+
+        var $waitform = $('form#modal-form')
+        $('#modal-form').on('submit', function(e) {
             e.preventDefault();
             console.log($waitform);
-            var jqxhr = $.ajax({
+            $('#modal-form').toggle();
+            $('#success').fadeToggle();
+            /** var jqxhr = $.ajax({
                 url: url2,
                 method: "GET",
                 dataType: "json",
@@ -367,42 +374,8 @@
                     $("#waitlist-form").toggle();
                     $("#waitlist-success").fadeToggle();
                 }
-                });
-        })
-
-        var $busform = $('form#business-form')
-
-        $('#submit-business-form').on('click', function(e) {
-            e.preventDefault();
-            console.log($busform);
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $busform.serializeObject(),
-                success: function() {
-                    alert("Thanks for signing up!");
-                    var form1 = document.getElementById("business-form");
-                    form1.style.display = "none";
-                }
-                });
-        })
-
-        var $indform = $('form#individual-form')
-        $('#submit-individual-form').on('click', function(e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $indform.serializeObject(),
-                success: function() {
-                    alert("Thanks for signing up!");
-                    var form1 = document.getElementById("individual-form");
-                    form1.style.display = "none";
-                }
-                });
-        })
+                }); **/
+        });
     </script>
 
     <!-- jQuery and Bootstrap -->
@@ -412,6 +385,16 @@
     <script src="js/rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
+    </script>
+
+    <!-- Phone validation -->
+    <script src="js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#waitlist-phone");
+        window.intlTelInput(input, {
+            formatOnDisplay: "true",
+            utilsScript: "js/utils.js",
+        });
     </script>
 
 
