@@ -216,7 +216,7 @@ video {
         height: auto;
         margin-left: 95px;
         margin-top: 60px;
-        border-radius: 5px 5px 30px 30px;   
+        border-radius: 5px 5px 30px 30px;
     }
     .demo-image {
         width: 100%;
@@ -228,9 +228,9 @@ video {
     video {
         width: 238px;
         margin-top: 50px;
-        border-radius: 5px 5px 25px 25px; 
+        border-radius: 5px 5px 25px 25px;
         left: 50%;
-        margin-left: -119px;  
+        margin-left: -119px;
     }
     .demo-image {
         width: 400px;
@@ -481,7 +481,7 @@ video {
     background-color: #0099FF !important;
 }
 
-.btn-primary:focus, 
+.btn-primary:focus,
 .btn-account:focus {
     box-shadow: none !important;
     outline: none !important;
@@ -637,5 +637,5 @@ body.modal-open {
 .iti__selected-flag:focus {
     box-shadow: none !important;
     outline: none !important;
-    background-color: rgba(0, 0, 0, 0.05)    
+    background-color: rgba(0, 0, 0, 0.05)
 }

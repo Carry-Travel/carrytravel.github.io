@@ -551,7 +551,7 @@ video {
 
 
 .waitlist-entry {
-    border-radius: 3px;
+    border-radius: 0px;
     border-width: 2px;
     border-color: white;
     color: white !important;
