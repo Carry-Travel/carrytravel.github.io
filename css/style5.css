@@ -87,6 +87,7 @@ p {
   color: black;
   font-weight: 200;
   margin-bottom: 0;
+  border-radius: 0;
 }
 
 /* Hero */
