@@ -397,13 +397,6 @@ video {
     }
 }
 
-.bookingcircles {
-  background-position: left 66px top 130px;
-  background-repeat: no-repeat;
-  flex: 1 1 0%;
-  border: 0 solid #ebebeb;
-}
-
 
 .modal-body a .btn-icon{
     position: relative;
@@ -636,6 +629,10 @@ label {
     background-color: rgb(0,21,50);
     width: 100vw;
     color: white;
+}
+
+.footer1 {
+  font-size: 12pt;
 }
 
 /* Modal */
