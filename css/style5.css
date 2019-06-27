@@ -27,6 +27,7 @@ h3 {
     font-size: 22px;
     font-weight: 200;
     color: white;
+    
 }
 
 h4 {
@@ -122,11 +123,11 @@ p {
     height: 1300px;
     top:-600px;
     transform: skewY(-13deg);
-    background-image: linear-gradient(70deg,rgb(0,21,50),#56b1e6);
+    background-image: linear-gradient(70deg,rgb(0,21,50),#0082ce);
     z-index: -1;
 }
 .bg-color {
-    background-color: black;
+    background-image: linear-gradient(70deg,rgb(0,21,50),#0082ce);
 }
 .line-color {
     border-top-color: rgb(0, 66, 121);
