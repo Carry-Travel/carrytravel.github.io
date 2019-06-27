@@ -307,6 +307,9 @@
         $('#waitlist-submit').click(function() {
             $("#modal-form").toggle(true);
             $("#success").toggle(false);
+
+            const waitlistEmail = $('#waitlist-form input[name=waitlistemail]').val();
+            analytics.track('Waitlist Modal Opened', { email: waitlistEmail })
         });
 
         url2 = 'https://script.google.com/macros/s/AKfycby9cd3S1Z2_AKLdS-2JISNuF4UZveLMcGXeMHr4K4KTR0qIfQk/exec'
@@ -397,6 +400,11 @@
                 dataType: 'json',
                 contentType: 'application/json',
                 success: function(data, textStatus, jqXHR) {
+                    analytics.track('Waitlist Signup', {
+                        name: waitlistName,
+                        email: waitlistEmail,
+                        phone_number: waitlistPhone | null,
+                    })
                     $('#modal-form').toggle();
                     $('#success').fadeToggle();
                 },
