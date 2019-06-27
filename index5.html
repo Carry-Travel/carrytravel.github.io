@@ -318,24 +318,6 @@
                 $('#waitlist-submit').click();
             }
         });
-
-        var $waitform = $('form#modal-form')
-        $('#modal-form').on('submit', function(e) {
-            e.preventDefault();
-            console.log($waitform);
-            $('#modal-form').toggle();
-            $('#success').fadeToggle();
-            /** var jqxhr = $.ajax({
-                url: url2,
-                method: "GET",
-                dataType: "json",
-                data: $waitform.serializeObject(),
-                success: function() {
-                    $("#waitlist-form").toggle();
-                    $("#waitlist-success").fadeToggle();
-                }
-                }); **/
-        });
     </script>
 
     <!-- jQuery and Bootstrap -->
@@ -389,11 +371,39 @@
   			.css('background-color', '#1b95e0');
   		})
   	})
+      </script>
 
     <script>
+      $("#modal-form").submit(function(ev) {
+            ev.preventDefault()
 
+            var waitlistName = $("#waitlist-name")[0].value
+            var waitlistEmail = $("#waitlist-email")[0].value
+            var waitlistPhone = $("#waitlist-phone")[0].value
 
+            const requestData = {
+                name: waitlistName,
+                email: waitlistEmail,
+                phone_number: waitlistPhone || null
+            }
+
+            $.ajax({
+                url: 'https://app.carry.travel/api/waitlist_users',
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function(data, textStatus, jqXHR) {
+                    $('#modal-form').toggle();
+                    $('#success').fadeToggle();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert("Something went wrong")
+                },
+                data: JSON.stringify(requestData)
+            })
+      });
     </script>
+    
     <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script
 
 </body>
