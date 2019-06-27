@@ -54,23 +54,23 @@
 
 <!-- dismissable banner-->
 
-          <div class="alert alert-dismissible alert-info">
+<div class="alert alert-dismissible alert-info">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Hi, we just launched today to consumers today! We have 200 spots.</strong>
+    We are available to individuals for the first time. Request access now!
   </div>
 
 
 <!-- header -->
 
-  <header class="justify-between items-center px-x9 pt-p53 hidden xl:flex">
+  <header class="justify-between items-center px-x9 pt-p53 flex">
       <a href="/">
           <img src="images/logo.png" class="attachment-full" alt="logo-blue" width="70">    </a>
-          <div class="d-none d-md-block" style="position:absolute;right:40px;">
+          <div class="" style="position:absolute;right:40px;">
               <a href="https://app.carry.travel/login" target="_blank" class="btn btn-account btn-sm">Log In</a>
           </div>
   </header>
 
-  <header class="flex xl:hidden h-p50 justify-between items-center z-40 w-screen pin-t px-20">
+  <header class="d-none h-p50 justify-between items-center z-40 w-screen pin-t px-20">
     <a href="/">
         <img src="images/logo.png" class="attachment-full" alt="logo-blue" width="70">    </a>
             <a href="https://app.carry.travel/login" target="_blank" class="btn btn-accountmobile btn-sm" width="50px">Log In</a>
@@ -114,7 +114,7 @@
                               <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                           </div>
                           <div class="center-mobile pt-4 animate-slide-left">
-                              <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Join the waitlist</button>
+                              <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Request Access</button>
                               <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px;">
                                   <div class="input-group">
                                       <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
@@ -255,7 +255,7 @@
 
             <div class="bg-blue-darkest text-center">
               <p class="text-p20 text-white font-regular mb-x11">Want to use Carry for your team?</p>
-                      <a href="https://calendly.com/carrytravel" class="btn-account"> Request a demo </a>
+                      <a href="https://calendly.com/carrytravel" class="btn btn-primary" style="max-width:400px;">Request a demo</a>
                 </div>
         </section>
     </div>
@@ -350,29 +350,7 @@
 
 
     <script>
-    (function() {
-     'use strict';
-      window.addEventListener('load', function() {
-       // Fetch all the forms we want to apply custom Bootstrap validation styles to
-       var forms = document.getElementsByClassName('needs-validation');
-       // Loop over them and prevent submission
-       var validation = Array.prototype.filter.call(forms, function(modalLoginForm) {
-          form.addEventListener('submit', function(event) {
-           if (form.checkValidity() === false) {
-             event.preventDefault();
-             event.stopPropagation();
-           }
-            else if (form.checkValidity() == true) {
-               $('#success').modal("show");
-
-               // stop form submit only for demo
-               event.preventDefault();
-            }
-           form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
+    
 
     </script>
     <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
