@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="436px" height="621px" viewBox="0 0 436 621" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.73916185%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1EAADA" offset="0%"></stop>
+            <stop stop-color="#1F3D8B" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="190" y="129" width="236" height="72" rx="8"></rect>
+        <filter x="-9.5%" y="-31.2%" width="119.1%" height="162.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.418927356   0 0 0 0 0.59566911   0 0 0 0 0.93359375  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="34" y="236" width="236" height="72" rx="8"></rect>
+        <filter x="-10.0%" y="-29.9%" width="119.9%" height="165.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.510652665   0 0 0 0 0.575461856   0 0 0 0 0.914886267  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="183" y="339" width="236" height="70" rx="8"></rect>
+        <filter x="-9.5%" y="-32.1%" width="119.1%" height="164.3%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.307065295   0 0 0 0 0.452374579   0 0 0 0 0.778459821  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="34" y="445" width="236" height="78" rx="8"></rect>
+        <filter x="-8.7%" y="-23.7%" width="117.4%" height="152.6%" filterUnits="objectBoundingBox" id="filter-9">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.401922141   0 0 0 0 0.483547026   0 0 0 0 0.90412415  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,52.0337657 L15,603.418038 C15,610.045455 20.372583,615.418038 27,615.418038 C27.8678155,615.418038 28.7330707,615.323901 29.5805823,615.137278 L364.795631,541.322766 C370.755322,540.010439 375,534.72939 375,528.626922 L375,94.1340364 C375,84.6202685 368.29816,76.4232851 358.974103,74.5328502 L30.5831672,7.95221052 C23.5466336,6.52556668 16.6858728,11.0732808 15.2592289,18.1098144 C15.0868426,18.9600634 15,19.8254331 15,20.6929816 Z" id="Path-2" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        <path id="Line" d="M270.5,270 L279.5,274.5 L279.5,265.5 L270.5,270 Z M307.5,198 L307.5,258 C307.5,264.351275 302.351275,269.5 296,269.5 L279,269.5 L278.5,269.5 L278.5,270.5 L279,270.5 L296,270.5 C302.903559,270.5 308.5,264.903559 308.5,258 L308.5,198 L308.5,197.5 L307.5,197.5 L307.5,198 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <g id="Rectangle-2" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="#FFFFFF" xlink:href="#path-2"></use>
+        </g>
+        <text id="You-choose-the-fligh" font-family="Rubik-Regular, Rubik" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="245" y="169">You choose the flight.</tspan>
+        </text>
+        <path id="Line" d="M143.5,374 L152.5,378.5 L152.5,369.5 L143.5,374 Z M180.5,307 L180.5,362 C180.5,368.351275 175.351275,373.5 169,373.5 L152,373.5 L151.5,373.5 L151.5,374.5 L152,374.5 L169,374.5 C175.903559,374.5 181.5,368.903559 181.5,362 L181.5,307 L181.5,306.5 L180.5,306.5 L180.5,307 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <g id="Rectangle-2" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+            <use fill="#FFFFFF" xlink:href="#path-4"></use>
+        </g>
+        <text id="We-handle-everything" font-family="Rubik-Regular, Rubik" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="69" y="276">We handle everything else.</tspan>
+        </text>
+        <g id="Rectangle-2" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+            <use fill="#FFFFFF" xlink:href="#path-6"></use>
+        </g>
+        <text id="Automatic-expensing" font-family="Rubik-Regular, Rubik" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="197.734" y="370">Automatic expensing of travel and </tspan>
+            <tspan x="253.608" y="385">per-diem spend</tspan>
+        </text>
+        <path id="Line" d="M270.5,477 L279.5,481.5 L279.5,472.5 L270.5,477 Z M307.5,410 L307.5,465 C307.5,471.351275 302.351275,476.5 296,476.5 L279,476.5 L278.5,476.5 L278.5,477.5 L279,477.5 L296,477.5 C302.903559,477.5 308.5,471.903559 308.5,465 L308.5,410 L308.5,409.5 L307.5,409.5 L307.5,410 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <g id="Rectangle-2" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+            <use fill="#FFFFFF" xlink:href="#path-8"></use>
+        </g>
+        <text id="Your-preferences-are" font-family="Rubik-Regular, Rubik" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="50.5805" y="481">Your preferences are recorded for </tspan>
+            <tspan x="83.1" y="496">easier future bookings.</tspan>
+        </text>
+    </g>
+</svg>

@@ -54,23 +54,23 @@
 
 <!-- dismissable banner-->
 
-          <div class="alert alert-dismissible alert-info">
+<div class="alert alert-dismissible alert-info">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Hi, we just launched today to consumers today! We have 200 spots.</strong>
+    We are available to individuals for the first time. Request access now!
   </div>
 
 
 <!-- header -->
 
-  <header class="justify-between items-center px-x9 pt-p53 hidden xl:flex">
+  <header class="justify-between items-center px-x9 pt-p53 flex">
       <a href="/">
           <img src="images/logo.png" class="attachment-full" alt="logo-blue" width="70">    </a>
-          <div class="d-none d-md-block" style="position:absolute;right:40px;">
+          <div class="" style="position:absolute;right:40px;">
               <a href="https://app.carry.travel/login" target="_blank" class="btn btn-account btn-sm">Log In</a>
           </div>
   </header>
 
-  <header class="flex xl:hidden h-p50 justify-between items-center z-40 w-screen pin-t px-20">
+  <header class="d-none h-p50 justify-between items-center z-40 w-screen pin-t px-20">
     <a href="/">
         <img src="images/logo.png" class="attachment-full" alt="logo-blue" width="70">    </a>
             <a href="https://app.carry.travel/login" target="_blank" class="btn btn-accountmobile btn-sm" width="50px">Log In</a>
@@ -114,7 +114,7 @@
                               <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                           </div>
                           <div class="center-mobile pt-4 animate-slide-left">
-                              <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Join the waitlist</button>
+                              <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Request Access</button>
                               <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px;">
                                   <div class="input-group">
                                       <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
@@ -143,15 +143,20 @@
                                           </div>
                                       </form>
                                       <div id="success" class="modal-body mt-4 mb-4 row" style="display: none">
-                                          <div class="col-12">
-                                              <mb-2>Thanks, we're excited to get you started!</mb-2><p></p>
-                                              <mb-2>If you want to skip the wait, the fastest way is to be referred by someone already using Carry.</mb-2><p></p>
-                                              <mb-2>Kashish Gupta</mb-2><p></p>
-                                              <mb-2>P.S. Share us on Twitter!</mb-2>
-                                              <p>
-                                              </p><a href="#" class="fa fa-twitter"></a>
-                                              <p></p>
-                                          </div>
+                                        <div class="col-12">
+                                                <mb-2>Thanks, we're excited to get you started!</mb-2><p></p>
+                                                <mb-2>If you want to skip the wait, the fastest way is to be referred by someone already using Carry.</mb-2><p></p>
+                                                <mb-2>Kashish Gupta</mb-2><p></p>
+                                                <mb-2>P.S. Share us on Twitter!</mb-2>
+                                                <p>
+                                                </p>
+
+                                                <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=Make%20travel%20way%20more%20fun%20with%20%40carrydottravel.%20If%20you%20have%20a%20referral%2C%20please%20send%20it%20to%20me!&tw_p=tweetbutton">
+                                                   <i class="btn-icon"></i>
+                                                   <span class="btn-text">Tweet</span>
+                                                 </a>
+
+                                            </div>
                                       </div>
                                   </div>
                               </div>
@@ -190,10 +195,10 @@
         <section class="content">
           <div class="max-w-1000 mx-auto flex xl:mt-p215 flex-col-reverse items-center mb-77 xl:flex-row xl:items-start xl:mb-0 px-15 xl:px-0">
             <div class="max-w-424 mt-x6 xl:max-w-full xl:mt-0 xl:ml-0 -ml-p15">
-              <img src="images/carryflow.png" class="max-w-565 hidden xl:block">
-              <img src="images/carryflow.png" class="xl:hidden" style="width: 100%">
+              <img src="images/carryflow.svg" class="max-w-565 hidden xl:block">
+              <img src="images/carryflow.svg" class="xl:hidden" style="width: 100%">
             </div>
-            <div class="bookingcircles">
+            <div class="xl:mt-p260 flex-1">
               <div class="text-center xl:w-p362 xl:text-left mx-auto">
                 <h3 class="text-p24 font-light leading-38 m-0 text-white uppercase">Stop wasting time booking flights.</h3>
                 <p class="mt-22 text-base font-light leading-24 tracking-1 xl:leading-31 xl:tracking-normal text-indigo-lighter">Carry provides an easy and seamless experience through Slack, email and SMS.</p>
@@ -255,7 +260,11 @@
 
             <div class="bg-blue-darkest text-center">
               <p class="text-p20 text-white font-regular mb-x11">Want to use Carry for your team?</p>
-                      <a href="https://calendly.com/carrytravel" class="btn-account"> Request a demo </a>
+              <!-- Calendly link widget begin -->
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/carrytravel'});return false;" class="btn btn-primary" style="max-width:400px;">Request a demo</a>
+              <!-- Calendly link widget end -->
                 </div>
         </section>
     </div>
@@ -319,6 +328,12 @@
     <script>
         var rellax = new Rellax('.rellax');
     </script>
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load("x329ZGPpQKa9BLxLpnICaSPeUMOaOJWF");
+        analytics.page();
+        }}();
+    </script>
 
     <!-- Phone validation -->
     <script src="js/intlTelInput.js"></script>
@@ -330,33 +345,36 @@
         });
     </script>
 
+    <script>
+       window.twttr = (function(d, s, id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = {
+              _e: [],
+              ready: function(f) {
+                t._e.push(f)
+              }
+            });
+          }(document, "script", "twitter-wjs"));
+
+  	$(document).ready(function(){
+  		$('.modal-body a .btn-icon, .modal-body a').hover(function(){
+  			$('.modal-body a .btn-icon, .modal-body a')
+  			.css('background-color', '#0c7abf');
+  		},
+  		function(){
+  			$('.modal-body a .btn-icon, .modal-body a')
+  			.css('background-color', '#1b95e0');
+  		})
+  	})
+      </script>
 
     <script>
-    (function() {
-     'use strict';
-      window.addEventListener('load', function() {
-       // Fetch all the forms we want to apply custom Bootstrap validation styles to
-       var forms = document.getElementsByClassName('needs-validation');
-       // Loop over them and prevent submission
-       var validation = Array.prototype.filter.call(forms, function(modalLoginForm) {
-          form.addEventListener('submit', function(event) {
-           if (form.checkValidity() === false) {
-             event.preventDefault();
-             event.stopPropagation();
-           }
-            else if (form.checkValidity() == true) {
-               $('#success').modal("show");
-
-               // stop form submit only for demo
-               event.preventDefault();
-            }
-           form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-
       $("#modal-form").submit(function(ev) {
-          console.log('hi')
             ev.preventDefault()
 
             var waitlistName = $("#waitlist-name")[0].value
@@ -384,10 +402,9 @@
                 data: JSON.stringify(requestData)
             })
       });
-    })();
     </script>
-
-    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+    
+    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script
 
 </body>
 
