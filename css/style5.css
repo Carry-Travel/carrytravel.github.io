@@ -12,11 +12,11 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     word-spacing: 0.08em;
-    line-height: 1.0;
+    line-height: 1.2;
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 18px;
     color: rgb(230, 230, 230);
     line-height: 1.2;
@@ -24,9 +24,9 @@ h2 {
 }
 
 h3 {
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 200;
     color: white;
-    font-size: 23px;
 }
 
 h4 {
@@ -46,13 +46,7 @@ a:hover {
     color: white;
 }
 
-p1 {
-    font-size: 18px;
-    font-weight: 300;
-  }
-
 p {
-    font-size: 18px;
     font-weight: 300;
     color: white;
 }
@@ -136,6 +130,7 @@ p {
 }
 .line-color {
     border-top-color: rgb(0, 66, 121);
+    border-top-width: 4px;
 }
 
 .balloon-align {
@@ -576,6 +571,38 @@ video {
     display:inline-block;
 }
 
+.dash {
+    width: 40px;
+    height: 2px;
+    background-image: linear-gradient(70deg,rgb(28, 94, 148),#56b1e6);
+    border-radius: 1px;
+}
+
+.content-dash {
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(70deg,rgb(28, 94, 148),#56b1e6);
+    border-radius: 2px;
+}
+
+.content-text {
+    display:flex;
+    align-items:center;
+}
+
+.content-image {
+    
+}
+
+.content-description p {
+    font-size: 16px;
+}
+
+@media (max-width:359px) {
+    .content-description p {
+        font-size: 14px;
+    }
+}
 
 .waitlist-entry {
     border-radius: 0px;
@@ -619,11 +646,16 @@ label {
 .footer {
     background-color: rgb(0,21,50);
     width: 100vw;
-    color: white;
 }
 
-.footer1 {
-  font-size: 12pt;
+p.footer1 {
+    font-size: 12pt;
+    color: rgb(223, 223, 223);
+}
+
+.footer1 a {
+    font-size: 12pt;
+    color: rgb(223, 223, 223);
 }
 
 /* Modal */
