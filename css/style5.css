@@ -241,10 +241,10 @@ video {
 
 @media (min-width: 576px) and (max-width:767px) {
     video {
-        width: 307px;
+        width: 285px;
         height: auto;
-        margin-left: 102px;
-        margin-top: 63px;
+        margin-left: 95px;
+        margin-top: 60px;
         border-radius: 5px 5px 30px 30px;
     }
     .demo-image {
@@ -468,11 +468,24 @@ video {
     max-width: 300px;
 }
 
+.btn-secondary {
+    border-style: none;
+    color: rgb(230, 230, 230);
+    background-color: transparent;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0.8rem 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 
 .btn-account {
     border-radius: 0px;
     border-width: 2px;
     border-color: white;
+    border-style: none;
     color: white;
     background-color: transparent;
     width: 100px;
@@ -507,6 +520,15 @@ video {
     color: #0099FF;
 }
 
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:not([disabled]):not(.disabled).active,
+.btn-secondary:not([disabled]):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #0099FF;
+    background-color: transparent;
+}
+
 .btn-account:hover,
 .btn-account:active,
 .btn-account:not([disabled]):not(.disabled).active,
@@ -527,6 +549,11 @@ video {
     background-color: #0099FF !important;
 }
 
+.btn-secondary:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    color: #0099FF;
+}
 .btn-primary:focus,
 .btn-account:focus {
     box-shadow: none !important;

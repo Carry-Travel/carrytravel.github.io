@@ -102,14 +102,19 @@
                              <div class="center-mobile pt-3 animate-slide-left">
                                 <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                             </div>
-                            <div class="center-mobile pt-4 mt-2 animate-slide-left">
-                                <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Request Access</button>
-                                <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px;">
-                                    <div class="input-group">
-                                        <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                                        <button class="btn-enter" type="button" data-toggle="modal" data-target="#modalLoginForm" id="waitlist-submit"><span class="ti-arrow-right"></button>
-                                    </div>
-                                </form>
+                            <div class="row pt-4 mt-2 animate-slide-left">
+                                <div class="col-md-8" style="text-align:center">
+                                    <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px">Request Access For Individuals</button>
+                                    <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px">
+                                        <div class="input-group">
+                                            <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                            <button class="btn-enter" type="button" data-toggle="modal" data-target="#modalLoginForm" id="waitlist-submit"><span class="ti-arrow-right"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-none d-md-block col-md-4">
+                                    <a href="" id="calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/carrytravel'});return false;" class="btn btn-secondary">Schedule a demo</a>
+                                </div>
                             </div>
                             <div class="modal fade" form id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true">
