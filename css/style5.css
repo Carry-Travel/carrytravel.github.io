@@ -614,6 +614,25 @@ video {
     border-radius: 2px;
 }
 
+p.demo-link, a.demo-link {
+    font-size: 14px;
+    color: rgb(230,230,230);
+    font-weight: 300;
+}
+
+a.demo-link {
+    text-decoration: underline;
+}
+
+a.demo-link:hover,
+a.demo-link:active,
+a.demo-link:focus {
+    outline: none;
+    box-shadow: none;
+    color: #0099FF;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
 .content-text {
     display:flex;
     align-items:center;
