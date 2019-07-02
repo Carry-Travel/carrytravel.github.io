@@ -61,11 +61,8 @@
             <header class="pt-4 px-4" style="justify-content: space-between;align-items: center; display:flex">
                 <a href="/">
                 <img src="images/logo.png" alt="logo-blue" width="70"></a>
-                <div class="d-none d-lg-block">
-                    <a href="https://app.carry.travel/login" target="_blank" class="btn btn-account btn-sm">Log In</a>
-                </div>
-                <div class="d-lg-none">
-                    <a href="https://app.carry.travel/login" target="_blank" class="btn-mobile"><span class="ti-lock"></span></a>
+                <div class="">
+                    <a href="https://app.carry.travel/login" target="_blank" class="btn btn-mobile"><span class="ti-lock"></span></a>
                 </div>
             </header>
             <div class="hero-bg">
@@ -105,14 +102,19 @@
                              <div class="center-mobile pt-3 animate-slide-left">
                                 <h2>Do what you do best and leave travel to us. Carry plans, books, and supports travel over Slack, SMS, and email.</h2>
                             </div>
-                            <div class="center-mobile pt-4 mt-2 animate-slide-left">
-                                <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px;">Request Access</button>
-                                <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px;">
-                                    <div class="input-group">
-                                        <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                                        <button class="btn-enter" type="button" data-toggle="modal" data-target="#modalLoginForm" id="waitlist-submit"><span class="ti-arrow-right"></button>
-                                    </div>
-                                </form>
+                            <div class="row pt-4 mt-2 animate-slide-left">
+                                <div class="col-md-8" style="text-align:center">
+                                    <button id="waitlist-btn"class="btn btn-primary"style="width:100%;max-width:400px">Request Access For Individuals</button>
+                                    <form id="waitlist-form" class="waitlist-form" style="display:none;width:100%;max-width:400px">
+                                        <div class="input-group">
+                                            <input class="waitlist-entry form-control" name="waitlistemail" id="initial-email" placeholder="Work Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                            <button class="btn-enter" type="button" data-toggle="modal" data-target="#modalLoginForm" id="waitlist-submit"><span class="ti-arrow-right"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-none d-md-block col-md-4">
+                                    <a href="" id="calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/carrytravel'});return false;" class="btn btn-secondary">Schedule a demo</a>
+                                </div>
                             </div>
                             <div class="modal fade" form id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true">
@@ -143,7 +145,7 @@
                                                     <br>
                                                     <p>P.S. Share us on Twitter!</p>
                                                     <div class="mt-2">
-                                                        <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=Make%20travel%20way%20more%20fun%20with%20%40travelwithcarry.%20If%20you%20have%20a%20referral%2C%20please%20send%20it%20to%20me!&tw_p=tweetbutton">
+                                                        <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=Travel%20booking%20could%20be%20a%20breeze%20@travelwithcarry.%20If%20you%20have%20a%20referral%2C%20please%20send%20it%20to%20me%21%20pic.twitter.com/ex1JtPnkNY&tw_p=tweetbutton">
                                                             <i class="btn-icon"></i>
                                                             <span class="btn-text">Tweet</span>
                                                         </a>
@@ -193,7 +195,7 @@
                             </h3>
                             <div class="dash"></div>
                             <p class="mt-3">
-                                We do all the work so you don’t have to. 
+                                We do all the work so you don’t have to.
                                 We’ll plan your trip step by step so you can focus for your meetings instead of looking for a hotel.
                             </p>
                         </div>
@@ -210,7 +212,7 @@
                             </h3>
                             <div class="dash"></div>
                             <p class="mt-3">
-                                We book travel on your personal card so you can get all the points. 
+                                We book travel on your personal card so you can get all the points.
                                 Expenses are filed automatically and you can even send us restaurant receipts.
                             </p>
                         </div>
@@ -249,20 +251,20 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-lg-3 mb-5 flex align-content-center">
-                        <img class="partner-logo px-5" src="/images/orthly.png">
+                        <img class="partner-logo px-5" src="images/orthly.png" style="width:80%;padding-top:10px">
                     </div>
                     <div class="col-sm-6 col-lg-3 mb-5 flex align-content-center">
-                        <img class="partner-logo px-5" src="/images/set.png">
+                        <img class="partner-logo px-5" src="images/set.png" style="width:75%">
                     </div>
                     <div class="col-sm-6 col-lg-3 mb-5 flex align-content-center">
-                        <img class="partner-logo px-5" src="/images/abacus.png">
+                        <img class="partner-logo px-5" src="images/abacus.png" style="padding-top:15px">
                     </div>
                     <div class="col-sm 6 col-lg-3 mb-5 flex align-content-center">
-                        <img class="partner-logo px-5" src="/images/segment.png">
+                        <img class="partner-logo px-5" src="images/segment.png" style="padding-top:10px">
                     </div>
                 </div>
             </div>
-            
+
             <!-- request access section -->
             <div class="bg-color">
                 <div class="container pt-5 pb-5">
@@ -272,7 +274,7 @@
                             <!-- Calendly link widget begin -->
                             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/carrytravel'});return false;" class="btn btn-primary" style="max-width:400px;">Request a demo</a>
+                            <a href="" id="calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/carrytravel'});return false;" class="btn btn-primary" style="max-width:400px;">Schedule a demo</a>
                             <!-- Calendly link widget end -->
                         </div>
                     </div>
@@ -424,7 +426,7 @@
       });
     </script>
 
-    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script
+    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
 
 </body>
 
