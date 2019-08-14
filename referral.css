@@ -1,0 +1,31 @@
+.two {
+  background: url('images/photo1.jpeg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height:800px;
+}
+
+.title {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom:50px;
+  width:65%;
+  padding-right:40px;
+  padding-left:40px;
+  border-radius:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D6D6D7;
+}
+
+.blue {
+  background-color: #140985;
+  border-style: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px #cbcad0;
+}
