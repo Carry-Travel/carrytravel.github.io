@@ -6,7 +6,7 @@
 @media (max-width: 768px) {
 .devimage {
   width:86%;
-  padding-top:10%;
+  padding-top:15%;
   margin-bottom:8%;
 }
 }
@@ -44,8 +44,8 @@
   border-style:solid;
   border-width:1px;
   margin-top:10px;
+  border-color: #D3D3D3;
 }
-
 
 
 .one {
