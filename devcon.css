@@ -3,25 +3,25 @@
 
 .hello {
   height: 100vh;
+  background-image: url("https://abacusfi.com/static/nyc.png");
+  background-position: left 50px bottom 100px;
+  background-repeat: no-repeat;
 }
 
 .blue3 {
-  color: #4A60C8;
+  color: #4a60c8;
 }
 
 .left {
-  background-color: #4A60C8;
+  background-color: #4a60c8;
   height: 100%;
 }
-
-
 
 .row {
   height: 100%;
 }
 .one {
 }
-
 
 .picture {
   border-radius: 20px;
@@ -31,11 +31,11 @@
   background-color: transparent;
   font-size: 18px;
   border-radius: 15px;
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-right:20px;
-  padding-left:20px;
-  border-color: #4A60C8;
-  border-width:2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-color: #4a60c8;
+  border-width: 2px;
   margin-bottom: 10px;
 }
