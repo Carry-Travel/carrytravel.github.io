@@ -5,19 +5,21 @@
 
 @media (max-width: 768px) {
 .devimage {
-  width:96%;
+  width:86%;
+  padding-top:10%;
+  margin-bottom:8%;
 }
 }
 
 @media (min-width: 768px) {
 .devimage {
-  width:84%;
+  width:76%;
 }
 }
 
 @media (min-width: 992px) {
 .devimage {
-  width:94%;
+  width:80%;
 }
 }
 
