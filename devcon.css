@@ -69,13 +69,17 @@ body::before {
   background: rgba(0, 0, 0, 0.2);
   padding: 2rem 1rem;
   border-radius: 4px;
-  margin: 2.5rem -15px;
+  margin: 1.5rem -15px;
 }
 
 .left {
   color: white;
   width: 100%;
   text-align: center;
+}
+
+.desktop-intro-text {
+  display: none;
 }
 
 /* The typing effect */
@@ -102,6 +106,14 @@ body::before {
 @media (min-width: 992px) {
   .devimage {
     width: 50%;
+  }
+
+  .carry-intro {
+    margin-bottom: 1.5rem;
+  }
+
+  .desktop-intro-text {
+    display: block;
   }
 
   .mobile-example-wrapper {
