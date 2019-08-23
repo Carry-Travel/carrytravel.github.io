@@ -1,69 +1,63 @@
 .body {
 }
 
-
-
 @media (max-width: 992px) {
-.devimage {
-  width:80%;
-}
-.left {
-  padding-top:22%;
-  background-color: #4A60C8;
-  width:100%;
-  text-align: center;
-  color:white;
-}
+  .devimage {
+    width: 80%;
+  }
+  .left {
+    padding-top: 22%;
+    /* background-color: #4a60c8; */
+    background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 }
 
 @media (min-width: 992px) {
-.devimage {
-  width:50%;
-}
+  .devimage {
+    width: 50%;
+  }
 
-.left {
-  background: #3494E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width:100%;
-  text-align: center;
-  padding-top:8%;
-  padding-bottom:10%;
-  color:white;
-}
+  .left {
+    /* background: rgb(0, 21, 50, 0.5); */
+    background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    color: white;
+  }
 
-.first {
-  padding-top:16%;
-  padding-bottom:16%;
+  .first {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
 }
-}
-
 
 .hello {
   height: 100vh;
 }
 
 .blue3 {
-  color: #4A60C8;
+  color: #4a60c8;
 }
 
 .text {
-  width:200px;
-  height:58px;
-  background-color:white;
-  border-radius:7px;
-  border-style:solid;
-  border-width:1px;
-  margin-top:10px;
-  border-color: #D3D3D3;
+  width: 200px;
+  height: 58px;
+  background-color: white;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 10px;
+  border-color: #d3d3d3;
 }
-
 
 .one {
   height: 100vh;
 }
-
-
 
 .picture {
   border-radius: 20px;
@@ -73,11 +67,15 @@
   background-color: transparent;
   font-size: 18px;
   border-radius: 15px;
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-right:20px;
-  padding-left:20px;
-  border-color: #4A60C8;
-  border-width:2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-color: #4a60c8;
+  border-width: 2px;
   margin-bottom: 10px;
+}
+
+.slack-install {
+  margin-right: 1rem;
 }
