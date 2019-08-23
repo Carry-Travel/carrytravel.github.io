@@ -1,92 +1,41 @@
-.body {
+html,
+body {
+  height: 100%;
 }
 
-@media (max-width: 992px) {
-  .devimage {
-    width: 80%;
-  }
-  .left {
-    padding-top: 15%;
-    padding-bottom:10%;
-    /* background-color: #4a60c8; */
-    background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
-    width: 100%;
-    text-align: center;
-    color: white;
-  }
-  .slackbutton {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .devimage {
-    width: 50%;
-  }
-
-  .typewriter p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .11em; /* Adjust as needed */
-    animation:
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  .mobile {
-    display:none;
-  }
-
-
-  .slackbutton {
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-radius:5px;
-    padding: 10px;
-    margin-bottom:15px;
-    display: inline-block;
-  }
-
-
-  .left {
-    /* background: rgb(0, 21, 50, 0.5); */
-    background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
-    width: 100%;
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 10%;
-    color: white;
-  }
-
-  .first {
-    padding-top: 16%;
-    padding-bottom: 16%;
-  }
-}
-
-.hello {
-  height: 100vh;
+body {
+  background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
 }
 
 .blue3 {
   color: #4a60c8;
 }
 
-.text {
+.cta-container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slack-install {
+  margin-bottom: 15px;
+}
+
+.text-cta {
   width: 200px;
   height: 58px;
+  color: black;
   background-color: white;
   border-radius: 7px;
   border-style: solid;
   border-width: 1px;
-  margin-top: 10px;
   border-color: #d3d3d3;
-}
-
-.one {
-  height: 100vh;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .picture {
@@ -106,27 +55,96 @@
   margin-bottom: 10px;
 }
 
-.slack-install {
-  margin-right: 1rem;
-}
-
 .btn.white {
-  background-color:white;
-  color:black;
-  border-style:solid;
-  border-color:white;
-  margin-top:0px;
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-color: white;
+  margin-top: 0px;
 }
 
+.mobile-example-wrapper {
+  max-width: 750px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.left {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 80% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@media (min-width: 992px) {
+  .devimage {
+    width: 50%;
+  }
+
+  .slack-install {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .cta-container {
+    flex-direction: row;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .slackbutton {
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  .first {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
+}
+
+@media (max-width: 992px) {
+  .devimage {
+    width: 80%;
+  }
+  .slackbutton {
+    display: none;
+  }
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.11em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
