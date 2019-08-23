@@ -6,7 +6,8 @@
     width: 80%;
   }
   .left {
-    padding-top: 22%;
+    padding-top: 15%;
+    padding-bottom:10%;
     /* background-color: #4a60c8; */
     background-image: linear-gradient(70deg, rgb(0, 21, 50), #3e7fa5);
     width: 100%;
@@ -55,6 +56,15 @@
   border-color: #d3d3d3;
 }
 
+.slackbutton {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius:5px;
+  padding: 10px;
+  display: inline-block;
+}
+
 .one {
   height: 100vh;
 }
@@ -78,4 +88,12 @@
 
 .slack-install {
   margin-right: 1rem;
+}
+
+.btn.white {
+  background-color:transparent;
+  color:white;
+  border-style:solid;
+  border-color:white;
+  margin-top:0px;
 }
